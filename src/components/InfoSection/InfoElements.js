@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const InfoContainer = styled.div`
-  color: #fff;
+  color: #eec39c;
   background: ${({ lightBg }) => (lightBg ? "#242622" : "#242622")};
 
-  @media screen and (max-width: 768px) {
-    padding: 100px 0;
+  @media all and (max-width: 768px) {
+    padding: 80px 0;
   }
 `;
 
@@ -15,12 +15,18 @@ z-index: 1;
 height: content;
 width: content;
 margin-top:80px;
-padding: 0 24px;
+overflow:hidden;
+padding: 0 0;
 justify-content: center;
+
+@media all and (max-width: 768px) {
+margin-top:80px;
+
+  }
+
 `;
 
 export const InfoRow = styled.div`
- display: grid;
     display: grid;
     grid-auto-rows: minmax(auto,1fr);
     align-items: start;
@@ -28,10 +34,11 @@ export const InfoRow = styled.div`
     align-content: stretch;
     justify-items: end;
     justify-content: start;
-  grid-template-areas: ${({ imgStart }) =>
+     grid-template-areas: ${({ imgStart }) =>
     imgStart ? `'col2 col1'` : `'col1 col2'`};
 
-  @media screen and (max-width: 768px) {
+
+  @media all and (max-width: 768px) {
     grid-template-areas: ${({ imgStart }) =>
       imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
   }
@@ -39,29 +46,54 @@ export const InfoRow = styled.div`
 
 export const Column1 = styled.div`
   margin-bottom: 15px;
-  margin-left:30px;
   position:absolute;
-
-  padding: 0 15px;
+  padding: 0 0;
   grid-area: col2;
+
+@media all and (max-width: 768px) {
+      position:relative;
+
+  }
 `;
 
 export const Column2 = styled.div`
   margin-bottom: 15px;
   width:1500px;
-  padding: 0 15px;
+  max-width:1500px;
+  margin-right:10vw;
   grid-area: col1;
-margin-left:calc((100vw - 2000px)/2);
+
+ @media all and (max-width: 1650px) {
+  margin-left:0
+}
+
+  @media all and (max-width: 1500px) {
+  margin-left:auto;
+  margin-right:auto;
+  max-height:66vw;
+  max-width:100% !important;
+}
+
+@media all and (max-width: 1100px) {
+  width:1000px;
+}
+
+@media all and (max-width: 600px) {
+  width:500px;
+}
+
 `;
 
 export const TextWrapper = styled.div`
   max-width: 500px;
   padding-top: 0;
-margin-right:5vw;
+  margin-right:5vw;
   padding-bottom: 60px;
 
-  @media screen and (max-width: 768px) {
+  @media all and (max-width: 768px) {
     display: flex;
+    width:80vw;
+    margin-right:10vw;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -73,6 +105,7 @@ export const TopLine = styled.p`
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
+ margin-top:30px;
   letter-spacing: 1.4px;
   text-transform: uppercase;
   margin-bottom: 16px;
@@ -80,12 +113,12 @@ export const TopLine = styled.p`
 
 export const Heading = styled.h1`
   margin-bottom: 24px;
-  font-size: 48px;
+  font-size: 36px;
   line-height: 1.1;
   font-weight: 600;
-  color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#242622")};
+  color: ${({ lightText }) => (lightText ? "#fff" : "#eec39c")};
 
-  @media screen and (max-width: 480px) {
+  @media all and (max-width: 480px) {
     font-size: 32px;
   }
 `;
@@ -95,7 +128,7 @@ export const Subtitle = styled.p`
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
-  color: ${({ darkText }) => (darkText ? "#242622" : "#fff")};
+  color: ${({ darkText }) => (darkText ? "#fff" : "#eec39c")};
 `;
 
 export const BtnWrap = styled.div`
@@ -104,12 +137,22 @@ export const BtnWrap = styled.div`
 `;
 
 export const ImgWrap = styled.div`
-  max-width: 1500px;
- /* height: 100%;*/
+    max-width: 1500px;
+    min-width: 500px;
+    margin-left:10vw;
+    background-color:#242622;
+
+@media all and (max-width: 1500px) {
+    margin-left:auto;
+    margin-right:auto;}
+  
 `;
 
 export const Img = styled.img`
   width: 1500px;
-  margin: 0 0 10px 0;
+  min-width: 500px !important;
   padding-right: 0;
+@media all and (max-width: 1500px) {
+    width:100%;
+
 `;

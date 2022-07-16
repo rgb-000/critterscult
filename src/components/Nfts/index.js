@@ -6,7 +6,7 @@ import {
   ServicesWrapper,
   ServicesCard,
   ServicesIcon,
-} from "./ServiceElements";
+} from "./NftEl";
 
 const Nfts = () => {
   return (

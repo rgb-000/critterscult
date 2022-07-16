@@ -57,7 +57,19 @@ const Navbar = ({ toggle }) => {
               >
                 About
               </NavLinks>
-            </NavItem>
+                      </NavItem>
+                      <NavItem>
+                          <NavLinks
+                              to="nfts"
+                              smooth={true}
+                              duration={500}
+                              spy={true}
+                              exact="true"
+                              offset={-80}
+                          >
+                              Collection
+                          </NavLinks>
+                      </NavItem>
             <NavItem>
               <NavLinks
                 to="scene_02"

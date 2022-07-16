@@ -1,19 +1,19 @@
 import styled from "styled-components";
 
 export const ServicesContainer = styled.div`
-  height: 800px;
+  height: content;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: #242622;
-
-  @media screen and (max-width: 768px) {
-    height: 1100px;
+margin-bottom: 80px;
+  @media all and (max-width: 768px) {
+    height: content;
   }
 
-  @media screen and (max-width: 480px) {
-    height: 1300px;
+  @media all and (max-width: 480px) {
+    height: content;
   }
 `;
 
@@ -26,11 +26,11 @@ export const ServicesWrapper = styled.div`
   grid-gap: 16px;
   padding: 0 50px;
 
-  @media screen and (max-width: 1000px) {
+  @media all and (max-width: 1000px) {
     grid-template-columns: 1fr 1fr;
   }
 
-  @media screen and (max-width: 768px) {
+  @media all and (max-width: 768px) {
     grid-template-columns: 1fr;
     padding: 0 20px;
   }
@@ -42,7 +42,8 @@ export const ServicesCard = styled.div`
   flex-direction: column;
   align-items: center;
   border-radius: 10px;
-  max-height: 360px;
+  height: 360px;
+  max-width:360px;
   padding: 10px;
   box-shadow: 0 3px 6px rgba(0, 30, 50, 0.9);
   transition: all 0.2s ease-in-out;
@@ -58,6 +59,7 @@ export const ServicesIcon = styled.img`
   height: 192px;
   width: 192px;
   margin-bottom: 10px;
+
 `;
 
 export const ServicesH1 = styled.h1`
@@ -65,7 +67,7 @@ export const ServicesH1 = styled.h1`
   color: #fff;
   margin-bottom: 64px;
 
-  @media screen and (max-width: 480px) {
+  @media all and (max-width: 480px) {
     font-size: 2rem;
   }
 `;

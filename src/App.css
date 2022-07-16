@@ -62,6 +62,7 @@
     display: grid;
 }
 
+
 .question {
     text-align: left !important;
     transition-duration: 1s;
@@ -88,7 +89,7 @@ button.btn {
     button.btn:hover {
         cursor: pointer;
         background-color: #2e879e;
-        color: #72b6cf;
+        color: #002d33;
         transition: linear ease-in-out 0.4s !important;
     }
 
@@ -127,3 +128,12 @@ header {
     bottom: 0;
 }
 #Fire{min-height:90px;}
+
+@media all and (max-width:500px) {
+    .container, .info {
+       
+        width: 100vw;
+        max-width: 100vw;
+       
+    }
+}

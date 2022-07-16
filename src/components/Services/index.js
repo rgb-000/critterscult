@@ -17,34 +17,33 @@ const Services = () => {
       <ServicesWrapper>
         <ServicesCard>
           <ServicesIcon src={"images/book.png"} />
-          <ServicesH2>Reduce expenses</ServicesH2>
+                  <ServicesH2>Lore & Art oriented</ServicesH2>
           <ServicesP>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+             Cri ipsum dolor sit amet consectetur adipisicing elit. Ipsum
             temporibus quam nesciunt similique accusamus consectetur.
           </ServicesP>
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon src={"images/col.png"} />
-          <ServicesH2>Virtual Offices</ServicesH2>
+          <ServicesH2>Access to new Collections </ServicesH2>
           <ServicesP>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+            Dolor sit amet consectetur adipisicing elit. Ipsum
             temporibus quam nesciunt similique accusamus consectetur.
           </ServicesP>
         </ServicesCard>
         <ServicesCard>
                   <ServicesIcon src={"images/globe.png"} />
-          <ServicesH2>Premium Benefits</ServicesH2>
+          <ServicesH2>Worldbuilding</ServicesH2>
           <ServicesP>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+           Sit amet consectetur adipisicing elit. Ipsum
             temporibus quam nesciunt similique accusamus consectetur.
           </ServicesP>
               </ServicesCard>
               <ServicesCard>
                   <ServicesIcon src={"images/suns.png"} />
-                  <ServicesH2>Premium Benefits</ServicesH2>
+                  <ServicesH2>Sun Studio</ServicesH2>
                   <ServicesP>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
-                      temporibus quam nesciunt similique accusamus consectetur.
+                      Created by @rgb0x00, Suns is a pixel art studio focused on excelencce and on building community around high quality art.
                   </ServicesP>
               </ServicesCard>
       </ServicesWrapper>

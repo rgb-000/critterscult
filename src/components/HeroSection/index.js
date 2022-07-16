@@ -71,7 +71,6 @@ const HeroSection = () => {
               
             <HeroO>
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum temporibus quam nesciunt similique accusamus consectetur odit aut exercitationem, amet corrupti repellendus ad, velit quibusdam veniam eaque blanditiis deserunt provident ducimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum temporibus quam nesciunt similique accusamus consectetur odit aut exercitationem, amet corrupti repellendus ad, velit quibusdam veniam eaque blanditiis deserunt provident ducimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum temporibus quam nesciunt similique accusamus consectetur odit aut exercitationem, amet corrupti repellendus ad.                 
-
               </HeroO><Play/*> <Fire *//>
 
         <HeroBtnWrapper>

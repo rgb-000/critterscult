@@ -1,7 +1,7 @@
 export const homeObj1 = {
   id: "scene_01",
   lightBg: false,
-  lightText: true,
+  lightText: false,
   lightTextDesc: true,
     topLine: "Not the usual pfp project",
   headline: "An Art & Lore oriented project",
@@ -11,18 +11,18 @@ export const homeObj1 = {
   imgStart: false,
   img: "images/scene_01.png",
   alt: "Car",
-  dark: true,
+  dark: false,
   primary: true,
-  darkText: false,
+  darkText: true,
 };
 
 export const homeObj2 = {
   id: "scene_02",
   lightBg: false,
-  lightText: true,
+  lightText: false,
   lightTextDesc: true,
   topLine: "Unlimited Access",
-  headline: "Log in to your account at any time",
+  headline: "Lore Oriented",
   description:
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum temporibus quam nesciunt similique accusamus consectetur odit aut exercitationem, amet corrupti repellendus ad, velit quibusdam veniam eaque blanditiis deserunt provident ducimus.",
   buttonLabel: "Learn More",
@@ -30,8 +30,8 @@ export const homeObj2 = {
   img: "images/scene_02.png",
   alt: "Car",
   dark: false,
-  primary: false,
-  darkText: false,
+  primary: true,
+  darkText: true,
 };
 /*
 export const homeObj3 = {

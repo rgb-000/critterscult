@@ -23,7 +23,7 @@ export const FormWrap = styled.div`
   flex-direction: column;
   justify-content: center;
 
-  @media screen and (max-width: 400px) {
+  @media all and (max-width: 400px) {
     height: 80%;
   }
 `;
@@ -39,7 +39,7 @@ export const Icon = styled(Link)`
 
   width: 95px;
 
-  @media screen and (max-width: 480px) {
+  @media all and (max-width: 480px) {
     margin-left: 16px;
     margin-top: 8px;
   }
@@ -51,7 +51,7 @@ export const FormContent = styled.div`
   flex-direction: column;
   justify-content: center;
 
-  @media screen and (max-width: 480px) {
+  @media all and (max-width: 480px) {
     padding: 10px;
   }
 `;
@@ -68,7 +68,7 @@ export const Form = styled.form`
   border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
 
-  @media screen and (max-width: 400px) {
+  @media all and (max-width: 400px) {
     padding: 32px 32px;
   }
 `;

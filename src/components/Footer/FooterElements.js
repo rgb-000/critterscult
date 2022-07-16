@@ -8,12 +8,12 @@ export const FooterContainer = styled.footer`
   background-position: bottom;
   background-size: cover;
   height:668px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    align-content: stretch;
-    justify-content: flex-end;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-content: stretch;
+  justify-content: flex-end;
+  flex-wrap: wrap;
 `;
 
 export const FooterWrapper = styled.div`
@@ -30,7 +30,7 @@ export const FooterLinksContainer = styled.div`
 display:none;
 justify-content: center;
 
-  @media screen and (max-width: 820px) {
+  @media all and (max-width: 820px) {
     padding-top: 32px;
   }
 `;
@@ -39,7 +39,7 @@ export const FooterLinksWrapper = styled.div`
   display: flex;
   justify-content: space-between;
 
-  @media screen and (max-width: 820px) {
+  @media all and (max-width: 820px) {
     flex-direction: column;
   }
 `;
@@ -53,7 +53,7 @@ export const FooterLinkItems = styled.div`
   box-sizing: border-box;
   color: #fff;
 
-  @media screen and (max-width: 420px) {
+  @media all and (max-width: 420px) {
     margin: 0;
     padding: 10px;
     width: 100%;
@@ -64,7 +64,7 @@ export const FooterLinkTitle = styled.h1`
   font-size: 14px;
   margin-bottom: 16px;
 
-  @media screen and (max-width: 768px) {
+  @media all and (max-width: 768px) {
     align-self: center;
   }
 `;
@@ -82,7 +82,7 @@ export const FooterLink = styled(Link)`
     transition: 0.3s ease-out;
   }
 
-  @media screen and (max-width: 768px) {
+  @media all and (max-width: 768px) {
     align-self: center;
   }
 `;
@@ -98,7 +98,7 @@ export const SocialMediaWrap = styled.div`
   margin: 20px auto 0 auto;
     width:80vw;
 
-  @media screen and (max-width: 820px) {
+  @media all and (max-width: 820px) {
     flex-direction: column;
   }
 `;

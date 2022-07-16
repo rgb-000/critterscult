@@ -76,11 +76,11 @@ export const HeroH1 = styled.h1`
 font-family: 'Roboto Mono';
   text-align: center;
 
-  @media screen and (max-width: 768px) {
+  @media all and (max-width: 768px) {
     font-size: 40px;
   }
 
-  @media screen and (max-width: 480) {
+  @media all and (max-width: 480) {
     font-size: 32px;
   }
 `;
@@ -95,11 +95,11 @@ export const HeroP = styled.p`
   margin-bottom:120px;
 
   
-  @media screen and (max-width: 768px) {
+  @media all and (max-width: 768px) {
     font-size: 18px;
   }
 
-  @media screen and (max-width: 480) {
+  @media all and (max-width: 480) {
     font-size: 18px;
   }
 `;
@@ -129,11 +129,11 @@ line-height: 20px;
     color: #72b6cf;
 }
   
-  @media screen and (max-width: 768px) {
+  @media all and (max-width: 768px) {
     font-size: 18px;
   }
 
-  @media screen and (max-width: 480) {
+  @media all and (max-width: 480) {
     font-size: 18px;
   }
 `;
