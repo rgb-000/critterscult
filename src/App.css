@@ -99,7 +99,7 @@ button.btn {
     }
 
     button.btn:focus-visible {
-        outline: 2px dashed #2e879e;
+        outline: 0px solid #2e879e;
         outline-offset: 0px;
     }
 
