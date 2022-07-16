@@ -1,6 +1,6 @@
 import React from "react";
 import { animateScroll as scroll } from "react-scroll";
-import { FaTwitter, FaYoutube, FaInstagram, FaFacebook } from "react-icons/fa";
+import { FaTwitter, FaDiscord } from "react-icons/fa";
 import {
   FooterContainer,
   FooterWrapper,
@@ -63,23 +63,17 @@ const Footer = () => {
         <SocialMedia>
           <SocialMediaWrap>
             <SocialLogo to="/" onClick={toggleHome}>
-              react
-            </SocialLogo>
-            <WebsiteRights>
-              react © {new Date().getFullYear()} All rights reserved.
+              Critters Cult
+                      </SocialLogo>
+                      <WebsiteRights><div class="10vw"></div>
+              suns © {new Date().getFullYear()} All rights reserved.
             </WebsiteRights>
-            <SocialIcons>
+                      <SocialIcons><div></div><div></div>
               <SocialIconLink href="/" target="_blank" aria-label="Twitter">
-                <FaTwitter />
-              </SocialIconLink>
-              <SocialIconLink href="/" target="_blank" aria-label="Instagram">
-                <FaInstagram />
-              </SocialIconLink>
-              <SocialIconLink href="/" target="_blank" aria-label="Facebook">
-                <FaFacebook />
-              </SocialIconLink>
-              <SocialIconLink href="/" target="_blank" aria-label="Youtube">
-                <FaYoutube />
+                              <FaTwitter />
+               </SocialIconLink>
+                      <SocialIconLink href="/" target="_blank" aria-label="Discord">
+                <FaDiscord />
               </SocialIconLink>
             </SocialIcons>
           </SocialMediaWrap>

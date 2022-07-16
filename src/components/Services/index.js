@@ -13,10 +13,10 @@ import {
 const Services = () => {
   return (
     <ServicesContainer id="services">
-      <ServicesH1>Our Services</ServicesH1>
+      <ServicesH1></ServicesH1>
       <ServicesWrapper>
         <ServicesCard>
-          <ServicesIcon src={"images/svg-5.svg"} />
+          <ServicesIcon src={"images/book.png"} />
           <ServicesH2>Reduce expenses</ServicesH2>
           <ServicesP>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
@@ -24,7 +24,7 @@ const Services = () => {
           </ServicesP>
         </ServicesCard>
         <ServicesCard>
-          <ServicesIcon src={"images/svg-6.svg"} />
+          <ServicesIcon src={"images/col.png"} />
           <ServicesH2>Virtual Offices</ServicesH2>
           <ServicesP>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
@@ -32,13 +32,21 @@ const Services = () => {
           </ServicesP>
         </ServicesCard>
         <ServicesCard>
-          <ServicesIcon src={"images/svg-7.svg"} />
+                  <ServicesIcon src={"images/globe.png"} />
           <ServicesH2>Premium Benefits</ServicesH2>
           <ServicesP>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
             temporibus quam nesciunt similique accusamus consectetur.
           </ServicesP>
-        </ServicesCard>
+              </ServicesCard>
+              <ServicesCard>
+                  <ServicesIcon src={"images/suns.png"} />
+                  <ServicesH2>Premium Benefits</ServicesH2>
+                  <ServicesP>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                      temporibus quam nesciunt similique accusamus consectetur.
+                  </ServicesP>
+              </ServicesCard>
       </ServicesWrapper>
     </ServicesContainer>
   );

@@ -2,12 +2,12 @@ import styled from "styled-components";
 import { MdArrowForward, MdKeyboardArrowRight } from "react-icons/md";
 
 export const HeroContainer = styled.div`
-  background: #0c0c0c;
+  background: #242622;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0 30px;
-  height: 800px;
+  height: 867px;
   position: relative;
   z-index: 1;
 
@@ -18,38 +18,37 @@ export const HeroContainer = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 0.2) 0%,
-        rgba(0, 0, 0, 0.6) 100%
-      ),
-      linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
     z-index: 2;
   }
 `;
 
 export const HeroBg = styled.div`
   position: absolute;
+  background-color: #242622;
+  background-image: url("/images/scene_05.png");
+  background-repeat-y: no-repeat;
+  background-repeat-x: repeat;
+  background-position: center;
+  background-size: contain;
+  background-size: 1500px 501px;
   top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  max-height: content;
   overflow: hidden;
 `;
 
 export const VideoBg = styled.video`
   width: 100%;
-  height: 100%;
+  max-height: 501px;
   -o-object-fit: cover;
   object-fit: cover;
-  background: #232a34;
 `;
 
 export const HeroContent = styled.div`
   z-index: 3;
-  max-width: 1200px;
+  max-width: 1500px;
+  min-height:501px;
+  top:540px;
   position: absolute;
   padding: 8px 24px;
   display: flex;
@@ -60,6 +59,7 @@ export const HeroContent = styled.div`
 export const HeroH1 = styled.h1`
   color: #fff;
   font-size: 48px;
+font-family: 'Roboto Mono';
   text-align: center;
 
   @media screen and (max-width: 768px) {
@@ -72,14 +72,16 @@ export const HeroH1 = styled.h1`
 `;
 
 export const HeroP = styled.p`
-  margin-top: 24px;
+  margin-top: 18px;
   color: #fff;
-  font-size: 24px;
+display:grid;
+  font-size: 16px;
   text-align: center;
-  max-width: 600px;
-
+  max-width: 900px;
+  margin-bottom:30px;
+  
   @media screen and (max-width: 768px) {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   @media screen and (max-width: 480) {

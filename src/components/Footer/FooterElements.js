@@ -2,7 +2,18 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const FooterContainer = styled.footer`
-  background-color: #010606;
+  background-color: #242622;
+  background-image: url("images/scene_06.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  height:668px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: flex-end;
+    flex-wrap: wrap;
 `;
 
 export const FooterWrapper = styled.div`
@@ -16,8 +27,9 @@ export const FooterWrapper = styled.div`
 `;
 
 export const FooterLinksContainer = styled.div`
-  display: flex;
-  justify-content: center;
+  /*display: flex;*/
+display:none;
+justify-content: center;
 
   @media screen and (max-width: 820px) {
     padding-top: 32px;
@@ -58,6 +70,8 @@ export const FooterLinkTitle = styled.h1`
     align-self: center;
   }
 `;
+
+
 
 export const FooterLink = styled(Link)`
   color: #fff;

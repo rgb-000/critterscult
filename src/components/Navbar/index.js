@@ -37,7 +37,7 @@ const Navbar = ({ toggle }) => {
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
           <NavLogo to="/" onClick={toggleHome}>
-            react
+            Critters Cult
           </NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
@@ -45,7 +45,7 @@ const Navbar = ({ toggle }) => {
           <NavMenu>
             <NavItem>
               <NavLinks
-                to="about"
+                to="scene_01"
                 smooth={true}
                 duration={500}
                 spy={true}
@@ -57,7 +57,7 @@ const Navbar = ({ toggle }) => {
             </NavItem>
             <NavItem>
               <NavLinks
-                to="discover"
+                to="scene_02"
                 smooth={true}
                 duration={500}
                 spy={true}
@@ -76,24 +76,13 @@ const Navbar = ({ toggle }) => {
                 exact="true"
                 offset={-80}
               >
-                Services
+                Sun Studio
               </NavLinks>
             </NavItem>
-            <NavItem>
-              <NavLinks
-                to="signup"
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact="true"
-                offset={-80}
-              >
-                Sign Up
-              </NavLinks>
-            </NavItem>
+
           </NavMenu>
           <NavBtn>
-            <NavBtnLink to="/signin">Sign In</NavBtnLink>
+            <NavBtnLink to="/signin">Button</NavBtnLink>
           </NavBtn>
         </NavbarContainer>
       </Nav>

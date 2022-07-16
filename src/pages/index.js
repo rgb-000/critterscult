@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
+import Nfts from "../components/Nfts";
 import InfoSection from "../components/InfoSection";
 import Services from "../components/Services";
 import Footer from "../components/Footer";
@@ -20,8 +21,9 @@ const Home = () => {
       <Navbar toggle={toggle} />
       <HeroSection />
       <InfoSection {...homeObj1} />
+      <Nfts />
       <InfoSection {...homeObj2} />
-      <Services />
+          <Services />
       <InfoSection {...homeObj3} />
       <Footer />
     </>
