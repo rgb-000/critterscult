@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { animateScroll as scroll } from "react-scroll";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaTwitter, FaDiscord } from "react-icons/fa";
+
 import {
   Nav,
   NavbarContainer,
@@ -9,8 +10,10 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
-  NavBtn,
-  NavBtnLink,
+  /*NavBtn,
+  NavBtnLink,*/
+  SocialIcons,
+  SocialIconLink,
 } from "./NavbarElements";
 
 const Navbar = ({ toggle }) => {
@@ -79,11 +82,29 @@ const Navbar = ({ toggle }) => {
                 Sun Studio
               </NavLinks>
             </NavItem>
-
-          </NavMenu>
+                      <NavItem>
+                          <NavLinks
+                              to="Faq"
+                              smooth={true}
+                              duration={500}
+                              spy={true}
+                              exact="true"
+                              offset={-80}
+                          >
+                              F.A.Q.
+                          </NavLinks>
+                      </NavItem>
+          </NavMenu/*>
           <NavBtn>
             <NavBtnLink to="/signin">Button</NavBtnLink>
-          </NavBtn>
+          </NavBtn*/><SocialIcons>
+                      <SocialIconLink href="https://twitter.com/critterscult" target="_blank" aria-label="Twitter">
+                          <FaTwitter />
+                      </SocialIconLink>
+                      <SocialIconLink href="https://discord.com/invite/RNSRHaxzbR" target="_blank" aria-label="Discord">
+                          <FaDiscord />
+                      </SocialIconLink>
+                  </SocialIcons>
         </NavbarContainer>
       </Nav>
     </>

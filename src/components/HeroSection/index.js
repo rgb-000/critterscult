@@ -5,10 +5,11 @@ import {
   HeroBg,
   VideoBg,
   HeroContent,
-  HeroH1,
-  HeroP,
+  /*HeroH1,*/
+  HeroO,
   HeroBtnWrapper,
   /*ArrowForward,
+  Fire,
   ArrowRight,*/
 } from "./HeroElements";
 /*import { Button } from "../ButtonElements";*/
@@ -68,13 +69,14 @@ const HeroSection = () => {
       </HeroBg>
       <HeroContent>
               
-        <HeroP>
-                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum temporibus quam nesciunt similique accusamus consectetur odit aut exercitationem, amet corrupti repellendus ad, velit quibusdam veniam eaque blanditiis deserunt provident ducimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum temporibus quam nesciunt similique accusamus consectetur odit aut exercitationem, amet corrupti repellendus ad, velit quibusdam veniam eaque blanditiis deserunt provident ducimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum temporibus quam nesciunt similique accusamus consectetur odit aut exercitationem, amet corrupti repellendus ad."                 
+            <HeroO>
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum temporibus quam nesciunt similique accusamus consectetur odit aut exercitationem, amet corrupti repellendus ad, velit quibusdam veniam eaque blanditiis deserunt provident ducimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum temporibus quam nesciunt similique accusamus consectetur odit aut exercitationem, amet corrupti repellendus ad, velit quibusdam veniam eaque blanditiis deserunt provident ducimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum temporibus quam nesciunt similique accusamus consectetur odit aut exercitationem, amet corrupti repellendus ad.                 
 
-              </HeroP><Play />
+              </HeroO><Play/*> <Fire *//>
+
         <HeroBtnWrapper>
         </HeroBtnWrapper>
-      </HeroContent>
+          </HeroContent>
     </HeroContainer>
   );
 };

@@ -1,18 +1,18 @@
 import React from "react";
 import { animateScroll as scroll } from "react-scroll";
-import { FaTwitter, FaDiscord } from "react-icons/fa";
+/*import { FaTwitter, FaDiscord } from "react-icons/fa";*/
 import {
   FooterContainer,
   FooterWrapper,
-  FooterLinksContainer,
+  /*FooterLinksContainer,
   FooterLinksWrapper,
   FooterLinkItems,
   FooterLinkTitle,
   FooterLink,
+  SocialIconLink,
+  SocialIcons,*/
   SocialMedia,
   SocialMediaWrap,
-  SocialIconLink,
-  SocialIcons,
   SocialLogo,
   WebsiteRights,
 } from "./FooterElements";
@@ -24,7 +24,7 @@ const Footer = () => {
 
   return (
     <FooterContainer>
-      <FooterWrapper>
+          <FooterWrapper/*>
         <FooterLinksContainer>
           <FooterLinksWrapper>
             <FooterLinkItems>
@@ -59,23 +59,23 @@ const Footer = () => {
               <FooterLink to="/">Youtube</FooterLink>
             </FooterLinkItems>
           </FooterLinksWrapper>
-        </FooterLinksContainer>
+        </FooterLinksContainer*/>
         <SocialMedia>
           <SocialMediaWrap>
             <SocialLogo to="/" onClick={toggleHome}>
               Critters Cult
                       </SocialLogo>
-                      <WebsiteRights><div class="10vw"></div>
-              suns © {new Date().getFullYear()} All rights reserved.
-            </WebsiteRights>
-                      <SocialIcons><div></div><div></div>
+                      <WebsiteRights>
+              developed by Suns © {new Date().getFullYear()} All rights reserved.
+            </WebsiteRights /*>
+                      <SocialIcons>
               <SocialIconLink href="/" target="_blank" aria-label="Twitter">
                               <FaTwitter />
                </SocialIconLink>
                       <SocialIconLink href="/" target="_blank" aria-label="Discord">
                 <FaDiscord />
               </SocialIconLink>
-            </SocialIcons>
+            </SocialIcons */>
           </SocialMediaWrap>
         </SocialMedia>
       </FooterWrapper>

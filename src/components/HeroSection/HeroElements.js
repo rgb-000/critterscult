@@ -7,7 +7,7 @@ export const HeroContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 30px;
-  height: 867px;
+  height: 100vh;
   position: relative;
   z-index: 1;
 
@@ -21,6 +21,19 @@ export const HeroContainer = styled.div`
     z-index: 2;
   }
 `;
+export function Fire() {
+
+    return (
+            <div className='Fire'>
+
+
+
+            <img id="Fire" alt="Fire" src="images/fire.gif"/>
+
+
+            </div>
+    );
+};
 
 export const HeroBg = styled.div`
   position: absolute;
@@ -30,10 +43,10 @@ export const HeroBg = styled.div`
   background-repeat-x: repeat;
   background-position: center;
   background-size: contain;
-  background-size: 1500px 501px;
+  background-size: 3000px 501px;
   top: 0;
   width: 100vw;
-  max-height: content;
+  min-height: 501px;
   overflow: hidden;
 `;
 
@@ -46,14 +59,15 @@ export const VideoBg = styled.video`
 
 export const HeroContent = styled.div`
   z-index: 3;
-  max-width: 1500px;
+  max-width: 500px;
   min-height:501px;
-  top:540px;
+  top:600px;
   position: absolute;
-  padding: 8px 24px;
+  padding: 8px 2px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
 `;
 
 export const HeroH1 = styled.h1`
@@ -74,11 +88,46 @@ font-family: 'Roboto Mono';
 export const HeroP = styled.p`
   margin-top: 18px;
   color: #fff;
-display:grid;
+  display:grid;
   font-size: 16px;
   text-align: center;
   max-width: 900px;
-  margin-bottom:30px;
+  margin-bottom:120px;
+
+  
+  @media screen and (max-width: 768px) {
+    font-size: 18px;
+  }
+
+  @media screen and (max-width: 480) {
+    font-size: 18px;
+  }
+`;
+
+export const HeroO = styled.p`
+  margin-top: 18px;
+  color:#2e879e;
+  display:inline;
+  font-size: 16px;
+  text-align: left;
+line-height:24px;
+  margin-bottom:120px;
+
+:first-letter {
+    font-size: 54px;
+margin-left:-35px;
+line-height: 20px;
+    font-weight: bold;
+    color: #72b6cf;
+}
+
+:after {
+    content: '"';
+    font-size: 24px;
+    line-height: 0px;
+    font-weight: bold;
+    color: #72b6cf;
+}
   
   @media screen and (max-width: 768px) {
     font-size: 18px;

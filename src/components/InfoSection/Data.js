@@ -33,7 +33,7 @@ export const homeObj2 = {
   primary: false,
   darkText: false,
 };
-
+/*
 export const homeObj3 = {
   id: "signup",
   lightBg: false,
@@ -51,3 +51,4 @@ export const homeObj3 = {
   primary: false,
   darkText: true,
 };
+*/

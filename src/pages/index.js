@@ -6,7 +6,9 @@ import Nfts from "../components/Nfts";
 import InfoSection from "../components/InfoSection";
 import Services from "../components/Services";
 import Footer from "../components/Footer";
-import { homeObj1, homeObj2, homeObj3 } from "../components/InfoSection/Data";
+import Faq from "../components/Faq";
+import { homeObj1, homeObj2} from "../components/InfoSection/Data";
+
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +26,7 @@ const Home = () => {
       <Nfts />
       <InfoSection {...homeObj2} />
           <Services />
-      <InfoSection {...homeObj3} />
+          <Faq/>
       <Footer />
     </>
   );

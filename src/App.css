@@ -31,22 +31,99 @@
 
 .tape button {
     max-width: 140px;
-    min-height:100px;
-    overflow:hidden;
+    min-height: 100px;
+    overflow: hidden;
     margin: 0;
-    background-color: #242622; /* Green */
+    background-color: #242622;
     border: none;
     text-align: left;
-    justify-items:start;
+    justify-items: start;
     font-size: 16px;
 }
- 
+
 
 .tape img {
     min-height: 100px !important;
 }
 
-.tape img:hover {
-    margin-left:-140px;
-    cursor:pointer;
+    .tape img:hover {
+        margin-left: -140px;
+        cursor: pointer;
+    }
+
+
+.container {
+    font-size: 1rem;
+    text-align: center;
+    color: #2e879e;
+    width: 500px;
+    margin: 20px auto;
+    transition-duration: 0.3s;
+    display: grid;
 }
+
+.question {
+    text-align: left !important;
+    transition-duration: 1s;
+    border-bottom: solid 2px #2e879e;
+    padding: 10px;
+}
+
+.info {
+    max-width: 500px;
+}
+
+button.btn {
+    color: #2e879e;
+    background-color: #002d33;
+    width: 30px;
+    padding: 4px 5px 6px 5px;
+    border: hidden;
+    align-content: center;
+    border-radius: 20px;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+    button.btn:hover {
+        cursor: pointer;
+        background-color: #2e879e;
+        color: #72b6cf;
+        transition: linear ease-in-out 0.4s !important;
+    }
+
+    button.btn:focus:not(:focus-visible) {
+        outline: 0;
+        border: hidden;
+        cursor: pointer;
+    }
+
+    button.btn:focus-visible {
+        outline: 2px dashed #2e879e;
+        outline-offset: 0px;
+    }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    align-items: center;
+}
+
+.answer {
+    transition-duration: 1s;
+}
+
+.container h3 {
+    border-bottom: 2px solid #2e879e;
+    padding-bottom: 20px;
+}
+
+.Fire {
+    height: 90px;
+    position: absolute;
+    bottom: 0;
+}
+#Fire{min-height:90px;}
