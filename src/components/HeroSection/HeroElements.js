@@ -48,6 +48,14 @@ export const HeroBg = styled.div`
   width: 100vw;
   min-height: 501px;
   overflow: hidden;
+
+@media all and (max-width: 768px) {
+    min-height: 334px;
+   background-size: 2000px 334px;
+
+
+  }
+
 `;
 
 export const VideoBg = styled.video`

@@ -6,8 +6,8 @@ import {
   SidebarWrapper,
   SidebarMenu,
   SidebarLink,
-  SideBtnWrap,
-  SidebarRoute,
+ /* SideBtnWrap,
+  SidebarRoute,*/
 } from "./SidebarElements";
 
 const Sidebar = ({ isOpen, toggle }) => {
@@ -17,23 +17,29 @@ const Sidebar = ({ isOpen, toggle }) => {
         <CloseIcon onClick={toggle} />
       </Icon>
       <SidebarWrapper>
-        <SidebarMenu>
-          <SidebarLink to="about" onClick={toggle}>
+              <SidebarMenu>
+          <SidebarLink to="/" onClick={toggle}>
+            Home
+          </SidebarLink>
+          <SidebarLink to="scene_01" onClick={toggle}>
             About
           </SidebarLink>
-          <SidebarLink to="discover" onClick={toggle}>
+          <SidebarLink to="nfts" onClick={toggle}>
+            Collection
+          </SidebarLink>
+          <SidebarLink to="scene_02" onClick={toggle}>
             Discover
           </SidebarLink>
           <SidebarLink to="services" onClick={toggle}>
-            Services
+            Sun Studio
           </SidebarLink>
-          <SidebarLink to="signup" onClick={toggle}>
-            Sign Up
+          <SidebarLink to="Faq" onClick={toggle}>
+            F.A.Q.
           </SidebarLink>
-        </SidebarMenu>
+        </SidebarMenu/*>
         <SideBtnWrap>
-          <SidebarRoute to="/signin">Sign In</SidebarRoute>
-        </SideBtnWrap>
+          <SidebarRoute to="signin">Sign In</SidebarRoute>
+        </SideBtnWrap*/>
       </SidebarWrapper>
     </SidebarContainer>
   );

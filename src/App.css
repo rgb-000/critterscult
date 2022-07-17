@@ -9,7 +9,14 @@
     image-rendering: crisp-edges;
     /* Chromium + Safari */
     image-rendering: pixelated;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
 }
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
 
 .imgheader {
     width: auto;
@@ -21,7 +28,8 @@
     width: 100%;
 }
 
-#root {
+
+#root, body {
     background-color: #242622;
 }
 
