@@ -5,7 +5,7 @@ import { Link as LinkS } from "react-scroll";
 export const Nav = styled.nav`
   background: ${({ scrollNav }) => (scrollNav ? "#242622" : "transparent")};
   height: 50px;
-  margin-top: -80px;
+  margin-top: -50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,6 +17,27 @@ export const Nav = styled.nav`
   @media all and(max-width: 960px) {
     transition: 0.8s all ease;
   }
+`;
+
+export const Fire = styled.div`
+  height: 10vh;
+  margin-top:90vh;
+  width:100vw;
+  background-image: url("/images/fire.gif");
+  animation: ${({ scrollNav }) => (scrollNav ? "AnimA" : "AnimB infinite")};
+  justify-content: center;
+  align-items: center;
+  background-color: #242622;
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  background-position:center;
+  background-size:90px 90px;
+  position:relative;
+  display:block;
+  animation-duration: 2000ms;
+  animation-fill-mode: ${({ scrollNav }) => (scrollNav ? "forwards" : "backwards")};
+  z-index: 10000;
+  bottom:0;
 `;
 
 export const NavbarContainer = styled.div`
@@ -88,6 +109,12 @@ export const NavLinks = styled(LinkS)`
   }
 `;
 
+
+export const FireLinks = styled(LinkS)`
+  cursor: pointer;
+
+`;
+
 export const NavBtn = styled.nav`
   display: flex;
   align-items: center;
@@ -139,3 +166,4 @@ export const SocialIconLink = styled.a`
 
 
 `;
+

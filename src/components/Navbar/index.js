@@ -9,23 +9,27 @@ import {
   MobileIcon,
   NavMenu,
   NavItem,
-  NavLinks,
+    NavLinks,
+    FireLinks,
   /*NavBtn,
   NavBtnLink,*/
   SocialIcons,
   SocialIconLink,
+  Fire,
 } from "./NavbarElements";
 
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
 
   const changeNav = () => {
-    if (window.scrollY >= 80) {
+    if (window.scrollY >= 50) {
       setScrollNav(true);
     } else {
       setScrollNav(false);
     }
-  };
+    };
+
+  
 
   useEffect(() => {
     window.addEventListener("scroll", changeNav);
@@ -36,8 +40,10 @@ const Navbar = ({ toggle }) => {
   };
 
   return (
-    <>
-      <Nav scrollNav={scrollNav}>
+      <>              
+
+         <Nav scrollNav={scrollNav}>
+
         <NavbarContainer>
           <NavLogo to="/" onClick={toggleHome}>
            Critters Cult
@@ -116,9 +122,20 @@ const Navbar = ({ toggle }) => {
                       <SocialIconLink href="https://discord.com/invite/RNSRHaxzbR" target="_blank" aria-label="Discord">
                           <FaDiscord />
                       </SocialIconLink>
-                  </SocialIcons>
+                      </SocialIcons>
         </NavbarContainer>
-      </Nav>
+          </Nav>
+          <FireLinks
+        
+              to="scene_01"
+              smooth={true}
+              duration={1000}
+              spy={true}
+              exact="true"
+              offset={-80}
+          >
+              <Fire scrollNav={scrollNav}/>
+          </FireLinks>
     </>
   );
 };

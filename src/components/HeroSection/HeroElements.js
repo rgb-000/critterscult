@@ -7,12 +7,11 @@ export const HeroContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 30px;
-  height: 100vh;
+  /*height: 100vh;*/
   min-height:fit-content;
-  position: relative;
   z-index: 1;
 
-  :before {
+ :before {
     content: "";
     position: absolute;
     top: 0;
@@ -22,19 +21,6 @@ export const HeroContainer = styled.div`
     z-index: 2;
   }
 `;
-export function Fire() {
-
-    return (
-            <div className='Fire'>
-
-
-
-            <img id="Fire" alt="Fire" src="images/fire.gif"/>
-
-
-            </div>
-    );
-};
 
 export const HeroBg = styled.div`
   position: absolute;
@@ -70,7 +56,7 @@ export const HeroContent = styled.div`
   z-index: 3;
   max-width: 500px;
   min-height:fit-content;
-  top:600px;
+  top:540px;
   position: absolute;
   padding: 8px 2px;
   display: flex;
@@ -105,7 +91,7 @@ export const HeroP = styled.p`
   font-size: 16px;
   text-align: center;
   max-width: 900px;
-  margin-bottom:120px;
+  margin-bottom:5vh;
   height:fit-content;
   
   @media all and (max-width: 768px) {
@@ -126,7 +112,16 @@ export const HeroO = styled.p`
   font-size: 16px;
   text-align: left;
   line-height:24px;
-  margin-bottom:120px;
+  margin-bottom:5vh;
+
+  @media all and (max-width: 768px) {
+    font-size: 18px;
+  }
+
+  @media all and (max-width: 480px) {
+    margin: 25px;
+  }
+
 
 :first-letter {
   font-size: 40px;
@@ -135,13 +130,6 @@ export const HeroO = styled.p`
   font-weight: bold;
   color: #72b6cf;
 }
-  @media all and (max-width: 768px) {
-    font-size: 18px;
-  }
-
-  @media all and (max-width: 480px) {
-    margin: 25px;
-  }
 
 :after {
     content: '"';

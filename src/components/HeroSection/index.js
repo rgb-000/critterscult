@@ -7,13 +7,13 @@ import {
   HeroContent,
   /*HeroH1,*/
   HeroO,
-  HeroBtnWrapper,
+    HeroBtnWrapper,
+   
+
   /*ArrowForward,
-  Fire,
   ArrowRight,*/
 } from "./HeroElements";
 /*import { Button } from "../ButtonElements";*/
-
 
 
 
@@ -52,8 +52,6 @@ class Play extends Component {
     }
 }
 
-
-
 const HeroSection = () => {
   /*const [hover, setHover] = useState(false);
     const onHover = () => {
@@ -71,7 +69,7 @@ const HeroSection = () => {
               
             <HeroO>
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum temporibus quam nesciunt similique accusamus consectetur odit aut exercitationem, amet corrupti repellendus ad, velit quibusdam veniam eaque blanditiis deserunt provident ducimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum temporibus quam nesciunt similique accusamus consectetur odit aut exercitationem, amet corrupti repellendus ad, velit quibusdam veniam eaque blanditiis deserunt provident ducimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum temporibus quam nesciunt similique accusamus consectetur odit aut exercitationem, amet corrupti repellendus ad.                 
-              </HeroO><Play/*> <Fire *//>
+              </HeroO><Play/>
 
         <HeroBtnWrapper>
         </HeroBtnWrapper>

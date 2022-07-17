@@ -41,6 +41,8 @@ export const InfoRow = styled.div`
   @media all and (max-width: 768px) {
     grid-template-areas: 'col1' 'col2';
     padding:0;
+    place-items:center;
+    place-content:center;
     align-content: stretch;
     justify-items: center;
      max-width:100vw;}
@@ -55,6 +57,7 @@ export const Column1 = styled.div`
   grid-area: col2;
 
 @media all and (max-width: 768px) {
+      grid-area: col2;
       position:relative;
 
   }
