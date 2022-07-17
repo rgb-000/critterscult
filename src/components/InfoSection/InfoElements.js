@@ -43,7 +43,7 @@ export const InfoRow = styled.div`
     padding:0;
     align-content: stretch;
     justify-items: center;
-     max}
+     max-width:100vw;}
 
 
 `;
@@ -66,25 +66,28 @@ export const Column2 = styled.div`
   max-width:1500px;
   margin-right:10vw;
   grid-area: col1;
-
+  
  @media all and (max-width: 1650px) {
   margin-left:0
 }
 
   @media all and (max-width: 1500px) {
-  margin-left:auto;
-  margin-right:auto;
-  max-height:66vw;
-  max-width:100% !important;
+  margin-left:calc(50vw - 750px);
+  width:100vw;
 }
 
-@media all and (max-width: 1100px) {
-  width:1000px;
+@media all and (max-width: 1000px) {
+  width:100vw;
+  margin-left:calc(50vw - 500px);
+
 }
 
-@media all and (max-width: 600px) {
-  width:500px;
+@media all and (max-width: 500px) {
+  width:100vw;
+  margin-left:calc(50vw - 250px);
+
 }
+
 
 `;
 
@@ -94,15 +97,14 @@ export const TextWrapper = styled.div`
   margin-right:5vw;
   padding-bottom: 60px;
 
-  @media all and (max-width: 768px) {
+  @media all and (max-width: 1500px) {
     display: flex;
-    width:80vw;
     margin-right:auto;
-margin-left:auto;
+    margin-left:auto;
+    width:100vw;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
   }
+
 `;
 
 export const TopLine = styled.p`
@@ -110,10 +112,15 @@ export const TopLine = styled.p`
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
- margin-top:30px;
+  margin-top:30px;
   letter-spacing: 1.4px;
   text-transform: uppercase;
   margin-bottom: 16px;
+ @media all and (max-width: 1000px) {
+    margin-right:5vw;
+    margin-left: 5vw;
+  }
+
 `;
 
 export const Heading = styled.h1`
@@ -122,6 +129,12 @@ export const Heading = styled.h1`
   line-height: 1.1;
   font-weight: 600;
   color: ${({ lightText }) => (lightText ? "#fff" : "#eec39c")};
+
+ @media all and (max-width: 1000px) {
+    margin-right:5vw;
+    margin-left: 5vw;
+  }
+
 
   @media all and (max-width: 480px) {
     font-size: 32px;
@@ -137,6 +150,10 @@ export const Subtitle = styled.p`
   line-height: 24px;
   color: ${({ darkText }) => (darkText ? "#fff" : "#eec39c")};
 
+ @media all and (max-width: 1000px) {
+    margin-right:5vw;
+    margin-left: 5vw;
+  }
 
 @media all and (max-width: 480px) {
     max-width:100vw;
@@ -165,7 +182,12 @@ export const Img = styled.img`
   width: 1500px;
   min-width: 500px !important;
   padding-right: 0;
-@media all and (max-width: 1500px) {
-    width:100%;
 
+@media all and (max-width: 1000px) {
+    width:1000px;
+}
+
+@media all and (max-width: 500px) {
+    width:500px;
+}
 `;
