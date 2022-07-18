@@ -36,8 +36,14 @@ export const Fire = styled.div`
   display:block;
   animation-duration: 2000ms;
   animation-fill-mode: ${({ scrollNav }) => (scrollNav ? "forwards" : "backwards")};
-  z-index: 10000;
+  z-index: 10;
   bottom:0;
+
+  @media all and (max-width: 768px) {
+  margin-top:1000px;
+visibility:hidden;
+}
+
 `;
 
 export const NavbarContainer = styled.div`

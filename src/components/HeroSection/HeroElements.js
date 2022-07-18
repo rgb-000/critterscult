@@ -7,7 +7,6 @@ export const HeroContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 30px;
-  /*height: 100vh;*/
   min-height:fit-content;
   z-index: 1;
 
@@ -37,7 +36,8 @@ export const HeroBg = styled.div`
   overflow: hidden;
 
 @media all and (max-width: 768px) {
-    min-height: 334px;
+   min-height: 334px;
+   height: 334px;
    background-size: 2000px 334px;
 
 
@@ -84,27 +84,6 @@ font-family: 'Roboto Mono';
   }
 `;
 
-export const HeroP = styled.p`
-  margin-top: 18px;
-  color: #fff;
-  display:grid;
-  font-size: 16px;
-  text-align: center;
-  max-width: 900px;
-  margin-bottom:5vh;
-  height:fit-content;
-  
-  @media all and (max-width: 768px) {
-    font-size: 18px;
-    margin-bottom:20px;
-
-  }
-
-  @media all and (max-width: 480) {
-    font-size: 18px;
-  }
-`;
-
 export const HeroO = styled.p`
   margin-top: 18px;
   color:#2e879e;
@@ -113,6 +92,8 @@ export const HeroO = styled.p`
   text-align: left;
   line-height:24px;
   margin-bottom:5vh;
+  max-height:800px;
+  overflow-y:auto;
 
   @media all and (max-width: 768px) {
     font-size: 18px;

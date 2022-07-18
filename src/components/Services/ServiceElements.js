@@ -30,8 +30,8 @@ export const ServicesWrapper = styled.div`
     grid-template-columns: 1fr 1fr;
   }
 
-  @media all and (max-width: 768px) {
-    grid-template-columns: 1fr 1fr;
+  @media all and (max-width: 488px) {
+    grid-template-columns: 1fr;
     padding: 0 20px;
   }
 `;
