@@ -2,12 +2,13 @@ import React, { useState } from "react";
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
 import HeroSection from "../components/HeroSection";
-import Nfts from "../components/Nfts";
 import InfoSection from "../components/InfoSection";
+import NftSection from "../components/NftSection";
+
 import Services from "../components/Services";
 import Footer from "../components/Footer";
 import Faq from "../components/Faq";
-import { homeObj1, homeObj2} from "../components/InfoSection/Data";
+import { home1, home2, NftText} from "../components/InfoSection/Data";
 
 
 const Home = () => {
@@ -22,9 +23,9 @@ const Home = () => {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <HeroSection />
-      <InfoSection {...homeObj1} />
-      <Nfts />
-      <InfoSection {...homeObj2} />
+      <InfoSection {...home1} />
+          <NftSection {...NftText} />
+          <InfoSection {...home2} />
           <Services />
           <Faq/>
       <Footer />

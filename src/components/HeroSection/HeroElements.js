@@ -7,6 +7,7 @@ export const HeroContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 30px;
+  font-size:16px;
   min-height:fit-content;
   z-index: 1;
 
@@ -72,7 +73,7 @@ export const HeroContent = styled.div`
 export const HeroH1 = styled.h1`
   color: #fff;
   font-size: 48px;
-font-family: 'Roboto Mono';
+  font-family: 'Roboto Mono';
   text-align: center;
 
   @media all and (max-width: 768px) {
@@ -88,7 +89,7 @@ export const HeroO = styled.p`
   margin-top: 18px;
   color:#2e879e;
   display:inline;
-  font-size: 16px;
+  font-size: 18px;
   text-align: left;
   line-height:24px;
   margin-bottom:5vh;
@@ -107,7 +108,7 @@ export const HeroO = styled.p`
 :first-letter {
   font-size: 40px;
   margin-left:-25px;
-  line-height: 20px;
+  line-height: 30px;
   font-weight: bold;
   color: #72b6cf;
 }

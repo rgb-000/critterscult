@@ -1,54 +1,58 @@
-export const homeObj1 = {
+export const home1 = {
   id: "scene_01",
   lightBg: false,
   lightText: false,
   lightTextDesc: true,
     topLine: "Not the usual pfp project",
-  headline: "An Art & Lore oriented project",
+  headline: "An art & narrative driven collection",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum temporibus quam nesciunt similique accusamus consectetur odit aut exercitationem, amet corrupti repellendus ad, velit quibusdam veniam eaque blanditiis deserunt provident ducimus.",
+        "Critters Cult is an experiment in art and narrative, developed by Sun Studio (Suns), under the same nostalgic spirit that drives all @rgb0x00 pixel-art creations. It's a zero utility collection focused on building a community through high quality art. The first part of the project will be the launch of the profile picture (or characters) collection. The second phase will be the lore (or narrative) development through a Reigns-like web application and also through derivative artworks to be auctioned or aidropped in the following months. The third phase will be the expansion through the landscape (or scenario) collection, Sunsets:Saga to be launched next year",
   buttonLabel: "Get Started",
   imgStart: false,
   img: "images/scene_01.png",
-  alt: "Car",
+  displayImg: true,
+  alt: "home1",
   dark: false,
   primary: true,
   darkText: true,
 };
 
-export const homeObj2 = {
+export const home2 = {
   id: "scene_02",
   lightBg: false,
   lightText: false,
   lightTextDesc: true,
-  topLine: "Unlimited Access",
-  headline: "Lore Oriented",
+  topLine: "The Setting ",
+  headline: "A nostalgic sci-fi mistery",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum temporibus quam nesciunt similique accusamus consectetur odit aut exercitationem, amet corrupti repellendus ad, velit quibusdam veniam eaque blanditiis deserunt provident ducimus.",
-  buttonLabel: "Learn More",
-  imgStart: true,
+        "Heavily influenced by 80s culture, conspiracy theories, old adventure games, B-Movies, and David Lynch and Steven Spielberg's work, the initial development will be set in a small town and its population dealing with bizarre events and charcaters that defy reason and shift reality. Together with the landscape collection, Critters Cult has the ambition to be world-building-like fiction work, in the sense to evolve in a coherent hypothetical setting with its own logic and physical rules.",
+  buttonLabel: "",
+  imgStart: false,
   img: "images/scene_02.png",
-  alt: "Car",
+  alt: "home2",
   dark: false,
   primary: true,
   darkText: true,
 };
-/*
-export const homeObj3 = {
-  id: "signup",
+
+export const NftText = {
+  id: "NftText",
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
-  topLine: "Join Our Team",
-  headline: "Creating an account is extremely easy",
+  topLine: "The Collection",
+  headline: "A stunning pixel art made to be perfect",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum temporibus quam nesciunt similique accusamus consectetur odit aut exercitationem, amet corrupti repellendus ad, velit quibusdam veniam eaque blanditiis deserunt provident ducimus.",
-  buttonLabel: "Start Now",
-  imgStart: false,
-  img: "",
-  alt: "Car",
+        "The colletions is in 13 base critters, and hundred of traits divided into five Realms, each one with its own aesthetics, from a Pre-Industrial and Alchemist society (MythPunk); a Gaslamp victorian horror gear society (SteamPunk); A noir WWII, occultist society (DieselPunk) Hard Sci-fi Nuclear Power Space Travel Spy society (AtomPunk) to a Distopyan Megacorps and Hacker future (CyberPunk)",	
+//MYTH < 1860 Pre - Industrial Society, Alchemy, Swords & Sorcery.
+// STEAM 1860 - 1915 Gear, Steam Power, Gaslamp Victorian, Monsters
+//DIESEL 1915 - 1950 WWII, Detectives, Film Noir, Occult
+//ATOM 1950 - 1980 Hard Sci - fi, Cold War, Atomic Power, Nuclear Energy, Robots
+//CYBER 1980 - ? Dystopya, Cybernetcs, Megacorps, Hackers, City Noir",
+  buttonLabel: "",
+  imgStart: true,
+  alt: "NftText",
   dark: false,
   primary: false,
   darkText: true,
 };
-*/
