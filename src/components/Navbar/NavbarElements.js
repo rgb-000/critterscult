@@ -20,8 +20,9 @@ export const Nav = styled.nav`
 `;
 
 export const Fire = styled.div`
-  height: 10vh;
+  height: 5vh;
   margin-top:90vh;
+  margin-bottom:5vh;
   width:100vw;
   background-image: url("/images/fire.png");
   animation: ${({ scrollNav }) => (scrollNav ? "AnimA" : "AnimB infinite")};
