@@ -44,7 +44,7 @@ export const scene_02 = {
   topLine: "The Setting ",
   headline: "A nostalgic sci-fi mistery",
   description:
-        "Heavily influenced by 80s culture, conspiracy theories, old adventure games, B-Movies, and David Lynch and Steven Spielberg's work, the initial development will be set in a small town and its population dealing with bizarre events and charcaters that defy reason and shift reality. Together with the landscape collection, Critters Cult has the ambition to be world-building-like fiction work, in the sense to evolve in a coherent hypothetical setting with its own logic and physical rules.",
+        "Heavily influenced by 80s culture, conspiracy theories, old adventure games, B-Movies, and David Lynch and Steven Spielberg's work, the initial development will be set in a small town and its population dealing with bizarre events and characters that defy reason and shift reality. Critters Cult has the ambition to be world-building-like fiction work, in the sense to evolve in a coherent hypothetical setting with its own logic and physical rules.",
   buttonLabel: "",
   imgStart: false,
   img: "images/scene_02.png",

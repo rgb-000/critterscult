@@ -20,7 +20,6 @@
 iframe {
     display: "none";
 }
-
 .imgheader {
     width: auto;
     margin-left: auto;
@@ -32,16 +31,27 @@ iframe {
 }
 
 body {
-    background-color: #242622;
-    overflow-x: hidden;
+    background-color: #242622;  
 }
+
+.main {
+            padding:0;
+            margin:0;
+}
+
 
 #scene_02 {
     display: grid !important;
 }
 
-#root {
-    overflow: hidden;
+
+
+#Ost {
+    position: fixed;
+    bottom: 0;
+    right: 50px;
+    width: 90px;
+    mix-blend-mode: lighten;
 }
 
 .tape {

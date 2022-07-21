@@ -19,6 +19,7 @@ export const Nav = styled.nav`
   }
 `;
 
+
 export const Fire = styled.div`
   height: 5vh;
   margin-top:90vh;
@@ -41,7 +42,7 @@ export const Fire = styled.div`
 
   @media all and (max-width: 768px) {
   margin-top:1000px;
-visibility:hidden;
+  visibility:hidden;
 }
 
 `;
@@ -118,7 +119,6 @@ export const NavLinks = styled(LinkS)`
 
 export const FireLinks = styled(LinkS)`
   cursor: pointer;
-
 `;
 
 export const NavBtn = styled.nav`
