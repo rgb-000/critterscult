@@ -38,12 +38,7 @@ export const HeroBg = styled.div`
 
 `;
 
-export const VideoBg = styled.video`
-  width: 100%;
-  max-height: 501px;
-  -o-object-fit: cover;
-  object-fit: cover;
-`;
+
 
 export const HeroContent = styled.div`
   z-index: 3;
