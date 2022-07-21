@@ -6,9 +6,10 @@ export const FooterContainer = styled.footer`
   background-image: url("images/scene_06.png");
   background-repeat: no-repeat;
   background-position: bottom;
-  background-size: cover;
+  background-size: 2000px 668px;
   height:668px;
   display: flex;
+  max-width: 100vw;
   align-items: center;
   flex-direction: column;
   align-content: stretch;
@@ -51,7 +52,7 @@ export const FooterLinkItems = styled.div`
   margin: 16px;
   text-align: left;
   box-sizing: border-box;
-  color: #fff;
+  color: #89d9d9;
 
   @media all and (max-width: 420px) {
     margin: 0;
@@ -72,7 +73,7 @@ export const FooterLinkTitle = styled.h1`
 
 
 export const FooterLink = styled(Link)`
-  color: #fff;
+  color: #89d9d9;
   text-decoration: none;
   margin-bottom: 0.5rem;
   font-size: 14px;
@@ -104,7 +105,7 @@ export const SocialMediaWrap = styled.div`
 `;
 
 export const SocialLogo = styled(Link)`
-  color: #fff;
+  color: #89d9d9;
   justify-self: start;
   cursor: pointer;
   text-decoration: none;
@@ -116,7 +117,7 @@ export const SocialLogo = styled(Link)`
 `;
 
 export const WebsiteRights = styled.small`
-  color: #fff;
+  color: #89d9d9;
   margin-bottom: 16px;
 `;
 
@@ -128,6 +129,6 @@ width:10vw;
 `;
 
 export const SocialIconLink = styled.a`
-  color: #fff;
+  color: #89d9d9;
   font-size: 20px;
 `;

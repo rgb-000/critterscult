@@ -5,7 +5,7 @@ import {
   HeroBg,
   VideoBg,
   HeroContent,
-  /*HeroH1,*/
+  HeroH1,
   HeroO,
     HeroBtnWrapper,
    
@@ -45,7 +45,7 @@ class Play extends Component {
 
                 {/* Button to call our main function */}
                 <button onClick={this.playPause}>
-                    <img alt="tape" src="images/tape.png"/>
+                    <img alt="tape" src="images/tape.gif"/>
                 </button>
             </div>
         );
@@ -66,7 +66,7 @@ const HeroSection = () => {
 
       </HeroBg>
       <HeroContent>
-              
+              <HeroH1>Prologue</HeroH1>
               <HeroO>"In a small town where no one remembers its name, abandoned structures, and spiral patterns are appearing in the wilderness overnight. There are rumors of stared eye people being seen wandering around for days before returning to their normal lives as if nothing had happened. At the gas station dinner, no clock seems to work and the waitress is impatient because she doesn't know if her shift is over or not. An long-beard man says it's close to the blue hour because no animal sounds can be heard outside. In a traditional hotel, a joyful valse is being played at the masquerade ball. Two agents are driving through the night to investigate why trains are no longer arriving at the station.
               </HeroO><Play/>
 

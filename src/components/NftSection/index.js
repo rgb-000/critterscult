@@ -22,8 +22,6 @@ const NftSection = ({
     headline,
     darkText,
     description,
-    img,
-    alt,
 
 }) => {
     return (

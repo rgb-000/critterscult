@@ -8,7 +8,7 @@ import NftSection from "../components/NftSection";
 import Services from "../components/Services";
 import Footer from "../components/Footer";
 import Faq from "../components/Faq";
-import { home1, home2, NftText} from "../components/InfoSection/Data";
+import { home1, scene_02, NftText} from "../components/InfoSection/Data";
 
 
 const Home = () => {
@@ -25,7 +25,7 @@ const Home = () => {
       <HeroSection />
       <InfoSection {...home1} />
           <NftSection {...NftText} />
-          <InfoSection {...home2} />
+          <InfoSection {...scene_02} />
           <Services />
           <Faq/>
       <Footer />

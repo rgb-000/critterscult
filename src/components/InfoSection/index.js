@@ -16,13 +16,13 @@ import {
 } from "./InfoElements";
 
 const InfoSection = ({
-  lightBg,
   id,
   imgStart,
   topLine,
   lightText,
   headline,
   darkText,
+  dark,
   description,
   img,
   alt,
@@ -36,7 +36,7 @@ const InfoSection = ({
               <TextWrapper>
                 <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
-                              <Subtitle darkText={darkText}>{description}</Subtitle>
+                              <Subtitle dark={dark} darkText={darkText}>{description}</Subtitle>
               </TextWrapper>
             </Column1>
             <Column2>

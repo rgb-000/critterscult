@@ -11,21 +11,13 @@ export const HeroContainer = styled.div`
   min-height:fit-content;
   z-index: 1;
 
- :before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 2;
-  }
+
 `;
 
 export const HeroBg = styled.div`
   position: absolute;
   background-color: #242622;
-  background-image: url("/images/scene_05.png");
+  background-image: url("/images/scene_05.gif");
   background-repeat-y: no-repeat;
   background-repeat-x: repeat;
   background-position: center;
@@ -71,26 +63,24 @@ export const HeroContent = styled.div`
 `;
 
 export const HeroH1 = styled.h1`
-  color: #fff;
-  font-size: 48px;
-  font-family: 'Roboto Mono';
-  text-align: center;
+   color: #fbb954;
+  font-size: 18px;
+  line-height: 16px;
+  font-weight: 700;
+  margin-top:30px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
 
-  @media all and (max-width: 768px) {
-    font-size: 40px;
-  }
-
-  @media all and (max-width: 480) {
-    font-size: 32px;
-  }
+ 
 `;
 
 export const HeroO = styled.p`
   margin-top: 18px;
-  color:#2e879e;
+  color:#72b6cf;
   display:inline;
-  font-size: 18px;
-  text-align: left;
+  font-size: 17px;
+  text-align: center;
   line-height:24px;
   margin-bottom:5vh;
   max-height:800px;

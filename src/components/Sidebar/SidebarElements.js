@@ -33,7 +33,7 @@ export const Icon = styled.div`
 `;
 
 export const SidebarWrapper = styled.div`
-color #fff;
+color #89d9d9;
 `;
 
 export const SidebarMenu = styled.ul`
@@ -84,7 +84,7 @@ export const SidebarRoute = styled(LinkR)`
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: #fff;
+    background: #89d9d9;
     color: #242622;
   }
 `;

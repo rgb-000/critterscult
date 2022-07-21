@@ -23,11 +23,10 @@ export const Fire = styled.div`
   height: 10vh;
   margin-top:90vh;
   width:100vw;
-  background-image: url("/images/fire.gif");
+  background-image: url("/images/fire.png");
   animation: ${({ scrollNav }) => (scrollNav ? "AnimA" : "AnimB infinite")};
   justify-content: center;
   align-items: center;
-  background-color: #242622;
   background-repeat:no-repeat;
   background-attachment: fixed;
   background-position:center;
@@ -145,7 +144,7 @@ export const NavBtnLink = styled(LinkR)`
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: #fff;
+    background: #89d9d9;
     color: #242622;
   }
 `;
@@ -168,8 +167,6 @@ export const SocialIconLink = styled.a`
   @media all and (max-width: 768px) {
     display: none;
   }
-
-
 
 `;
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 
-function Questions({ title, info }) {
+function Questions({ title, info, alink }) {
     const [show, setShow] = useState(false);
     return (
         <>
@@ -12,7 +12,7 @@ function Questions({ title, info }) {
                         {show ? '-' : '+'}
                     </button>
                 </header>
-                <p className='answer'>{show ? info : ''}</p>
+                <p className='answer'>{show ? info : ''}<a href={alink} target="_blank" rel="noreferrer" className='alink'>{show ? alink : ''}</a></p>
             </article >
         </>
     )

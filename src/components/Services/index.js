@@ -24,16 +24,16 @@ const Services = () => {
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon src={"images/col.png"} />
-          <ServicesH2>Escalate</ServicesH2>
+          <ServicesH2>Playfullness</ServicesH2>
           <ServicesP>
-            The project will grow beyond the traditional narrative format or a mere pfp collection to something more playfull, interactive and cohese with the web 3.0.
+            The narrative will developed beyond a traditional media to something more playfull, interactive and cohese with the web 3.0 spirit.
           </ServicesP>
         </ServicesCard>
         <ServicesCard>
                   <ServicesIcon src={"images/globe.png"} />
           <ServicesH2>Worldbuilding</ServicesH2>
           <ServicesP>
-            As a world-building-like work, the ambition is to create something that can be a kind of boilerplate to admit future expansions and developments.
+            The aim is to create a setting that will work as a boilerplate to future expansions, new stories and developments.
           </ServicesP>
               </ServicesCard>
               <ServicesCard>
