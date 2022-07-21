@@ -55,7 +55,7 @@ class Play extends Component {
                 <button
                     id="audioBtn"
                     onClick={this.togglePlay}> {this.state.play ? "" : ""}
-                    <img alt="tape" src="images/tape.png" />
+                    <img alt="tape" src="images/tape.gif" />
                 </button>
             </div>
         );
