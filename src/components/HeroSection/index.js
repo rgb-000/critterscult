@@ -3,7 +3,7 @@ import Mp3 from "../../audio/audio.mp3";
 import {
   HeroContainer,
   HeroBg,
-  VideoBg,
+  /*VideoBg,*/
   HeroContent,
   HeroH1,
   HeroO,
@@ -60,10 +60,8 @@ const HeroSection = () => {
 
   return (
     <HeroContainer id="home" >
-      <HeroBg>
-              
-              <VideoBg/>
-
+      <HeroBg/*>              
+              <VideoBg/*/>
       </HeroBg>
       <HeroContent>
               <HeroH1>Prologue</HeroH1>
