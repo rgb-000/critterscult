@@ -21,7 +21,7 @@ export const Nav = styled.nav`
 
 
 export const Fire = styled.div`
-  height: 5vh;
+  height: 90px;
   margin-top:90vh;
   margin-bottom:5vh;
   width:100vw;
