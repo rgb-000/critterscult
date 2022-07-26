@@ -7,6 +7,7 @@
     -ms-interpolation-mode: nearest-neighbor;
     /* Firefox */
     image-rendering: crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
     /* Chromium + Safari */
     image-rendering: pixelated;
     -ms-overflow-style: none; /* IE and Edge */
@@ -17,41 +18,45 @@
         display: none;
     }
 
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+
 iframe {
     display: "none";
 }
+
 .imgheader {
     width: auto;
     margin-left: auto;
     margin-right: auto;
     min-height: 500px;
     max-height: 500px;
-    max-width: 1500px;
+    max-width: 1440px;
     width: 100%;
 }
 
 body {
-    background-color: #242622;  
+    background-color: #242622;
+    margin: 0px !important;
 }
 
 .main {
-            padding:0;
-            margin:0;
+    padding: 0 !important;
+    margin: 0 !important;
 }
-
 
 #scene_02 {
     display: grid !important;
 }
 
-
+#home {
+    min-height: 1100px;
+}
 
 #Ost {
-    position: fixed;
-    bottom: 0;
-    right: 50px;
-    width: 90px;
-    mix-blend-mode: lighten;
+    width: 70px;
+    height: 66px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .tape {
@@ -59,47 +64,27 @@ body {
 }
 
     .tape button {
-        max-width: 140px;
-        min-height: 100px;
+        max-width: 70px;
+        min-height: 66px;
         overflow: hidden;
         z-index: 10;
         margin: 0;
         background-color: transparent;
         border: none;
-        text-align: left;
-        justify-items: start;
         font-size: 18px;
     }
 
     .tape img {
-        min-height: 100px !important;
+        display:block;
+        height: 66px !important;
+        margin-left: -30px;
         mix-blend-mode: lighten;
-        /* animation: MySkew infinite;
-    animation-duration: 2500ms;
-    animation-fill-mode: backwards;*/
     }
 
         .tape img:hover {
-            margin-left: -140px;
+            margin-left: -170px;
             cursor: pointer;
         }
-
-@keyframes MySkew {
-    0% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-
-    60% {
-        opacity: 1;
-        transform: translateY(8px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
 
 .container {
     font-size: 16px;
@@ -117,6 +102,48 @@ body {
     border-bottom: solid 2px #2e879e;
     padding: 10px;
     color: #fbb954;
+}
+
+#home p:first-letter {
+    font-size: 36px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #72b6cf;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap');
+#home p::before, ::after {
+    font-size: 16px;
+    line-height: 0px;
+    color: #72b6cf;
+}
+
+#home p::after {
+    content: "\201D";
+    font-family: "Inknut Antiqua";
+    font-weight: bold;
+}
+
+#home p::before {
+    content: "\201CIn";
+    font-family: "Inknut Antiqua";
+    margin-left: -20px;
+    font-weight: bold;
+}
+
+#nfttext p::after {
+    content: "\A\A- MythPunk, a Pre-Industrial and Alchemist society; \A- SteamPunk, a Gaslamp victorian horror gear society; \A - DieselPunk, a noir WWII, occultist society;\A- AtomPunk, a Nuclear Power, Space Travel and Spy society;\A- CyberPunk, a Dystopian Megacorps and Hacker future.";
+    white-space: pre-wrap;
+}
+
+#scene_01 p::after {
+    content: "Critters Cult is an indie experiment developed by Sun Studio (Suns) under the same standards that drive all @rgb0x00 pixel art creations, focusing on excelling the craft of pixel art and bringing together people that share the same passion around visual narratives and nostalgic pixel art aesthetics. \A\AHeavily influenced by 80s culture, conspiracy theories, old adventure games, B-Movies, and David Lynch and Steven Spielberg's works, the initial development will be set in a small town and its population dealing with bizarre events and characters that defy reason and shift the so-called reality. Critters Cult has the ambition to be a world-building fiction work and evolve into a complex universe with its own logic and physical laws.";
+    white-space: pre-wrap;
+}
+
+#scene_02 p::after {
+    content: "Critters Cult is divided into three parts that are briefly described below and will be detailed in the near future. \A\AThe first part of Critters Cult will be the profile picture collection. After its launch, 1/1 artworks inspired by the Critters Cult universe will be developed. \A\AThe second part will consist on the development of the visual narrative behind Critters Cult into a web app to be launched within the next few months. \A\AThe third part of the project will start right after the launch of the web app and will result in another collection, to be launched next year \2014 \0020the Suns:Saga. This will be the expansion of Critters Cult through settings and landscapes that will push the storytelling of the Critters Cult even further.";
+    white-space: pre-wrap;
 }
 
 .info {
@@ -185,7 +212,7 @@ header {
 }
 
 #NftText, #scene_01, #scene_02 {
-    padding: 40px;
+    /*padding: 40px;*/
 }
 
 a.alink {
@@ -210,7 +237,7 @@ a.alink {
     }
 
     #NftText, #scene_01, #scene_02 {
-        padding: 10px;
+        /*padding: 10px*/
     }
 }
 

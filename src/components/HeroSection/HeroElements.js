@@ -14,6 +14,23 @@ export const HeroContainer = styled.div`
 
 `;
 
+export const HeroFooter = styled.div`
+  position: fixed;
+  background-image: url("/images/footer-mask.png");
+  background-repeat-y: no-repeat;
+  background-repeat-x: repeat;
+  background-position: center;
+  bottom: 0;
+  z-index:10;
+  background-size: contain;
+  mix-blend-mode: darken;
+  min-width: 100vw;
+  min-height: 22px;
+  overflow: hidden;
+  height: 22px;
+  background-size: 22px 22px;
+`;
+
 export const HeroBg = styled.div`
   position: absolute;
   background-color: #242622;
@@ -24,7 +41,7 @@ export const HeroBg = styled.div`
   background-size: contain;
   background-size: 3000px 501px;
   top: 0;
-  width: 100vw;
+  min-width: 100vw;
   min-height: 501px;
   overflow: hidden;
 
@@ -39,12 +56,11 @@ export const HeroBg = styled.div`
 `;
 
 
-
 export const HeroContent = styled.div`
   z-index: 3;
   max-width: 500px;
   min-height:fit-content;
-  top:540px;
+  top:500px;
   position: absolute;
   padding: 8px 2px;
   display: flex;
@@ -62,49 +78,31 @@ export const HeroH1 = styled.h1`
   font-size: 18px;
   line-height: 16px;
   font-weight: 700;
-  margin-top:30px;
+  margin-top:10px;
   letter-spacing: 10px;
   text-transform: uppercase;
-  margin-bottom: 16px;
-
- 
 `;
 
-export const HeroO = styled.p`
-  margin-top: 18px;
+export const Hero = styled.p`
+  margin-top: 16px;
   color:#72b6cf;
   display:inline;
-  font-size: 17px;
-  text-align: center;
+  font-size: 16px;
+  text-align: left;
+  whitespace: pre;
   line-height:24px;
   margin-bottom:5vh;
   max-height:800px;
-  overflow-y:auto;
+  overflow:visible!important;
 
   @media all and (max-width: 768px) {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   @media all and (max-width: 480px) {
-    margin: 25px;
+    margin: 16px;
   }
 
-
-:first-letter {
-  font-size: 40px;
-  margin-left:-25px;
-  line-height: 30px;
-  font-weight: bold;
-  color: #72b6cf;
-}
-
-:after {
-    content: '"';
-    font-size: 24px;
-    line-height: 0px;
-    font-weight: bold;
-    color: #72b6cf;
-}
 `;
 
 export const HeroBtnWrapper = styled.div`

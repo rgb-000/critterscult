@@ -9,6 +9,7 @@ export const FooterContainer = styled.footer`
   background-size: 2000px 668px;
   height:668px;
   display: flex;
+  z-index:10000;
   max-width: 100vw;
   align-items: center;
   flex-direction: column;

@@ -1,17 +1,62 @@
-import React/*, { useState, Component }*/ from "react";
+import React, { Component } from "react";
 import {
     HeroContainer,
     HeroBg,
     HeroContent,
     HeroH1,
-    HeroO,
+    Hero,
     HeroBtnWrapper,
-
+    HeroFooter,
     /*ArrowForward,
     ArrowRight,*/
 } from "./HeroElements";
 /*import { Button } from "../ButtonElements";*/
+import Mp3 from "../../audio/audio.mp3";
 
+
+
+class Play extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            play: false
+        };
+
+        this.url = Mp3;
+        this.audio = new Audio(this.url);
+        this.audio.addEventListener('ended', function () {
+            this.currentTime = 0;
+            this.play();
+        }, false);
+        this.togglePlay = this.togglePlay.bind(this);
+    }
+
+    togglePlay() {
+        const wasPlaying = this.state.play;
+        this.setState({
+            play: !wasPlaying
+        });
+
+        if (wasPlaying) {
+            this.audio.pause();
+        } else {
+            this.audio.play()
+        }
+    }
+
+    render() {
+        return (
+            <div class="tape" id="Ost">
+                <button
+                    id="audioBtn"
+                    onClick={this.togglePlay}> {this.state.play ? "" : ""}
+                    <img alt="tape" src={this.state.play ? "images/tape.gif" : "images/pause.gif"} />
+                </button>
+            </div>
+        );
+    }
+}
 
 
 
@@ -27,13 +72,20 @@ const HeroSection = () => {
             <HeroBg>
             </HeroBg>
             <HeroContent>
+                <Play />
+                <HeroFooter />
                 <HeroH1>Prologue</HeroH1>
-                <HeroO>"In a small town where no one remembers its name, abandoned structures, and spiral patterns appear in the wilderness overnight. There are rumors of stared eye people being seen wandering around for days before returning to their everyday lives as if nothing had happened. At the diner shop, no clock seems to work and the waitress, impatiently as she doesn't know if her shift is over or not, was told by a long-beard man it's close to the blue hour because no animal sounds can be heard outside. Cutting the cold silence, distant music was coming from a traditional hotel, where a slow-tempo valse is played despite no one left on the masquerade ball. The guest list has the name of two agents, but they are not seen in the hotel that night, to follow a dubious clue that will lead them deep into the woods.
-                </HeroO>
+                <Hero> an outlying town that no one recalls, abandoned structures and spiral patterns started appearing overnight, far away in the fields. Rumors of glazed-eyed wanderers walking around through the night turned that peaceful place upside down.<br /><br />
+
+                    At the diner shop, no clock seems to be working. The waitress holds her head over her hands waiting for her shift to be over. A long-bearded man, sitting next to her, murmurs as if reading her mind that they were entering the blue hour, for no animal sounds could be heard outside.<br /><br />
+
+                    Cutting through the cold silence, a slow tempo waltz can be heard coming from the hotel's ballroom, still being played despite no one is left in the masquerade ball. Two of the guests were missing and nowhere to be seen. An eerie note has been left behind - what seemed to be a clue of what led them deep into the woods.
+                </Hero>
 
                 <HeroBtnWrapper>
                 </HeroBtnWrapper>
             </HeroContent>
+      
         </HeroContainer>
 
     );

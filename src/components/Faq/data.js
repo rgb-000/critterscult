@@ -1,33 +1,33 @@
 const questions = [
     {
         id: 1,
-        title: 'How many Critters will have there?',
+        title: 'What is the Critters Cult supply?',
         info:
-            'The Critters Cult supply will be equal 4,444 items.',
+            '4000 Critters Cult NFTs will be minted.',
     },
     {
         id: 2,
-        title: 'When will the mint happen??',
+        title: 'When will the mint happen?',
         info:
-            'The mint will happen on September',
+            'The mint will happen in September',
     },
     {
         id: 3,
-        title: 'How can I get WL for mint?',
+        title: 'How can I get a WL spot?',
         info:
-            'Any solsunset holder will be able to claim a WL for mint also',
+            'There are X ways of getting a WL spot: Solsunsets holders will be able to claim a WL spot using $pixels',
     },
     {
         id: 4,
         title: 'Who is the team behind Critters Cult?',
         info:
-            'Critters Cult was developed by Suns, a pixel art studio created by @rgb0x00, the same artist and developer of Solsunsets',
+            'Critters Cult is a creation by Suns, a pixel art studio founded by @rgb0x00, the artist and developer of Solsunsets',
     },
     {
         id: 5,
-        title: 'Is there will be royalties?',
+        title: 'How much will be the artist royalties?',
         info:
-            'The royalties will be set on 6%.',
+            'The royalties will be set on 5.5%.',
     },
        {
         id: 6,

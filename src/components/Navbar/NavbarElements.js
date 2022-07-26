@@ -5,7 +5,7 @@ import { Link as LinkS } from "react-scroll";
 export const Nav = styled.nav`
   background: ${({ scrollNav }) => (scrollNav ? "#242622" : "transparent")};
   height: 50px;
-  margin-top: -50px;
+  margin-top: -52px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,6 +17,13 @@ export const Nav = styled.nav`
   @media all and(max-width: 960px) {
     transition: 0.8s all ease;
   }
+`;
+
+/*
+
+
+export const FireLinks = styled(LinkS)`
+  cursor: pointer;
 `;
 
 
@@ -45,7 +52,7 @@ export const Fire = styled.div`
   visibility:hidden;
 }
 
-`;
+`;*/
 
 export const NavbarContainer = styled.div`
   display: flex;
@@ -117,9 +124,6 @@ export const NavLinks = styled(LinkS)`
 `;
 
 
-export const FireLinks = styled(LinkS)`
-  cursor: pointer;
-`;
 
 export const NavBtn = styled.nav`
   display: flex;

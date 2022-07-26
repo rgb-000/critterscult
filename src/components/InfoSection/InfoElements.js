@@ -32,10 +32,10 @@ export const InfoRow = styled.div`
     align-content: stretch;
     justify-items: end;
     justify-content: center;
-     grid-template-areas: ${({ imgStart }) =>
+    grid-template-areas: ${({ imgStart }) =>
         imgStart ? `'col2 col1'` : `'col1 col2'`};
 
-  @media all and (max-width: 1280px) {
+  @media all and (max-width: 1440px) {
     grid-template-areas: 'col1' 'col2';
     padding:0;
     place-items:center;
@@ -54,7 +54,7 @@ export const Column1 = styled.div`
   padding: 0 0;
   grid-area: col2;
 
-@media all and (max-width: 1000px) {
+@media all and (max-width: 1440px) {
       position:relative;
 max-height:fit-content!important;
   }
@@ -68,7 +68,7 @@ export const Column2 = styled.div`
   grid-area: col2;
 }
 
-@media all and (max-width: 1280px) {
+@media all and (max-width: 1440px) {
   grid-area: col1;
 }
 
@@ -81,7 +81,7 @@ export const TextWrapper = styled.div`
   max-width: 600px;
   padding-bottom: 10px;
 
-  @media all and (max-width: 1500px) {
+  @media all and (max-width: 1440px) {
     display: flex;
     margin-right:auto;
     flex-direction: column;
@@ -89,7 +89,7 @@ export const TextWrapper = styled.div`
 
 `;
 
-export const TopLine = styled.p`
+export const TopLine = styled.h2`
   color: #72b6cf;
   font-size: 18px;
   line-height: 16px;
@@ -116,16 +116,18 @@ export const Heading = styled.h1`
 
 export const Subtitle = styled.p`
   max-width: 600px;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 24px;
   color: ${({ darkText }) => (darkText ? "#72b6cf" : "#fbb954")};
+
+}
 
   @media all and (max-width: 1920px) {
   padding:12px;
   background-color: ${({ dark }) => (dark ? "#242622" : "transparent")};
 }
 
-  @media all and (max-width: 1500px) {
+  @media all and (max-width: 1440px) {
   padding:0;
  background-color:transparent;
 }
@@ -144,7 +146,7 @@ export const ImgWrap = styled.div`
     max-width: 1500px;
     min-width: 500px;
 
-@media all and (max-width: 1500px) {
+@media all and (max-width: 1440px) {
     max-width: 1000px;
 
     margin-left:auto;
@@ -157,11 +159,10 @@ export const Img = styled.img`
   min-width: 500px !important;
   padding-right: 0;
 
-@media all and (max-width: 1500px) {
+@media all and (max-width: 1440px) {
     width:1000px;
-    margin-top:350px;
 }
-@media all and (max-width: 1280px) {
+@media all and (max-width: 1024px) {
     width:1000px;
     margin-top:20px;
 }
