@@ -22,8 +22,9 @@ const Footer = () => {
     scroll.scrollToTop();
   };
 
-  return (
-    <FooterContainer>
+    return (
+      <>
+    <FooterContainer id="foot">
           <FooterWrapper/*>
         <FooterLinksContainer>
           <FooterLinksWrapper>
@@ -66,7 +67,7 @@ const Footer = () => {
               Critters Cult
                       </SocialLogo>
                       <WebsiteRights>
-              developed by Suns © {new Date().getFullYear()} All rights reserved.
+              developed by Suns© {new Date().getFullYear()}.
             </WebsiteRights /*>
                       <SocialIcons>
               <SocialIconLink href="/" target="_blank" aria-label="Twitter">
@@ -78,8 +79,10 @@ const Footer = () => {
             </SocialIcons */>
           </SocialMediaWrap>
         </SocialMedia>
-      </FooterWrapper>
-    </FooterContainer>
+          </FooterWrapper>
+      
+            </FooterContainer>
+        </>
   );
 };
 

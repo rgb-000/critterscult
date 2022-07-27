@@ -6,7 +6,6 @@ import {
     HeroH1,
     Hero,
     HeroBtnWrapper,
-    HeroFooter,
     /*ArrowForward,
     ArrowRight,*/
 } from "./HeroElements";
@@ -73,7 +72,6 @@ const HeroSection = () => {
             </HeroBg>
             <HeroContent>
                 <Play />
-                <HeroFooter />
                 <HeroH1>Prologue</HeroH1>
                 <Hero> an outlying town that no one recalls, abandoned structures and spiral patterns started appearing overnight, far away in the fields. Rumors of glazed-eyed wanderers walking around through the night turned that peaceful place upside down.<br /><br />
 

@@ -175,3 +175,18 @@ export const SocialIconLink = styled.a`
 
 `;
 
+export const ShadeFooter = styled.div`
+  position: fixed;
+  background-image: url("/images/footer-mask.png");
+  background-repeat-y: no-repeat;
+  background-repeat-x: repeat;
+  bottom: 0;
+  animation: ${({ scrollNav }) => (scrollNav ? "AHide forwards" : "AShow infinite")};
+  mix-blend-mode: darken;
+  min-width: 100vw;
+  z-index:1000;
+  min-height: 44px;
+  overflow: hidden;
+  animation-duration: 3000ms;
+  background-size: 44px 44px;
+`;

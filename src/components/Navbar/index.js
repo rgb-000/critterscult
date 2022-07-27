@@ -12,6 +12,7 @@ import {
     NavLinks,
     SocialIcons,
     SocialIconLink,
+    ShadeFooter,
     /*FireLinks,
       Fire*/
 } from "./NavbarElements";
@@ -108,19 +109,9 @@ const Navbar = ({ toggle }) => {
                         </SocialIconLink>
                     </SocialIcons>
                 </NavbarContainer>
-            </Nav/*>
-          <FireLinks
-              scrollNav={scrollNav}
-              to="scene_01"
-              smooth={true}
-              duration={1000}
-              spy={true}
-              exact="true"
-              offset={-80}
-          >
-              <Fire scrollNav={scrollNav} />
+            </Nav>    <ShadeFooter scrollNav={scrollNav}/>
 
-          </FireLinks*/>
+
         </>
     );
 };

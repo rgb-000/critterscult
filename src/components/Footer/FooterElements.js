@@ -8,8 +8,8 @@ export const FooterContainer = styled.footer`
   background-position: bottom;
   background-size: 2000px 668px;
   height:668px;
+  z-index: 100;
   display: flex;
-  z-index:10000;
   max-width: 100vw;
   align-items: center;
   flex-direction: column;
@@ -98,10 +98,11 @@ export const SocialMediaWrap = styled.div`
   justify-content: space-evenly;
   align-items: start;
   margin: 20px auto 0 auto;
-    width:80vw;
+  width:100vw;
+  z-index:1000;
+
 
   @media all and (max-width: 820px) {
-    flex-direction: column;
   }
 `;
 
@@ -133,3 +134,5 @@ export const SocialIconLink = styled.a`
   color: #89d9d9;
   font-size: 20px;
 `;
+
+

@@ -3,25 +3,25 @@ const questions = [
         id: 1,
         title: 'What is the Critters Cult supply?',
         info:
-            '4000 Critters Cult NFTs will be minted.',
+            '4444 Critters Cult NFTs will be minted.',
     },
     {
         id: 2,
         title: 'When will the mint happen?',
         info:
-            'The mint will happen in September',
+            'The mint will happen in September.',
     },
     {
         id: 3,
         title: 'How can I get a WL spot?',
         info:
-            'There are X ways of getting a WL spot: Solsunsets holders will be able to claim a WL spot using $pixels',
+            'There are X ways of getting a WL spot: Solsunsets holders will be able to claim a WL spot using $Pixels.',
     },
     {
         id: 4,
         title: 'Who is the team behind Critters Cult?',
         info:
-            'Critters Cult is a creation by Suns, a pixel art studio founded by @rgb0x00, the artist and developer of Solsunsets',
+            'Critters Cult is a creation by Suns, a pixel art studio founded by @rgb0x00, the artist and developer of Solsunsets.',
     },
     {
         id: 5,
@@ -33,7 +33,7 @@ const questions = [
         id: 6,
         title: 'How much will cost?',
         info:
-            'The price in SOL will be equal to 0.75 SOL. 25% of the supply will be minted with $Pixels and the price will range between 250 to 300 $Pixels, depending on the mint date.',
+            'The price in SOL and in $Pixels will be announced closer to the mint date and 25% of the supply will to be minted entirely with $Pixels.',
     },
     {
         id: 7,

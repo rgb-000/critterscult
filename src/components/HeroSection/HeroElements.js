@@ -14,22 +14,7 @@ export const HeroContainer = styled.div`
 
 `;
 
-export const HeroFooter = styled.div`
-  position: fixed;
-  background-image: url("/images/footer-mask.png");
-  background-repeat-y: no-repeat;
-  background-repeat-x: repeat;
-  background-position: center;
-  bottom: 0;
-  z-index:10;
-  background-size: contain;
-  mix-blend-mode: darken;
-  min-width: 100vw;
-  min-height: 22px;
-  overflow: hidden;
-  height: 22px;
-  background-size: 22px 22px;
-`;
+
 
 export const HeroBg = styled.div`
   position: absolute;
