@@ -53,4 +53,6 @@ const Nfts = () => {
   );
 };
 
+
+
 export default Nfts;

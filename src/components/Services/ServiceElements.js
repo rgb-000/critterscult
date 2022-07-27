@@ -67,13 +67,11 @@ export const ServicesIcon = styled.img`
 `;
 
 export const ServicesH1 = styled.h1`
-  font-size: 2.5rem;
-  color: #89d9d9;
-  margin-bottom: 64px;
+  margin: 24px 0px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fbb954;
 
-  @media all and (max-width: 480px) {
-    font-size: 2rem;
-  }
 `;
 
 export const ServicesH2 = styled.h2`

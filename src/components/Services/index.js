@@ -13,7 +13,7 @@ import {
 const Services = () => {
   return (
     <ServicesContainer id="services">
-      <ServicesH1></ServicesH1>
+      <ServicesH1>Critters Cult Principles</ServicesH1>
       <ServicesWrapper>
         <ServicesCard>
           <ServicesIcon src={"images/book.png"} />

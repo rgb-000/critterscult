@@ -45,7 +45,7 @@ export const HeroContent = styled.div`
   z-index: 3;
   max-width: 500px;
   min-height:fit-content;
-  top:500px;
+  top:567px;
   position: absolute;
   padding: 8px 2px;
   display: flex;
@@ -53,7 +53,7 @@ export const HeroContent = styled.div`
   align-items: center;
 
 @media all and (max-width: 768px) {
-      top:340px;
+      top:400px;
   }
 
 `;

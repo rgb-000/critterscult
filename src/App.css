@@ -50,8 +50,10 @@ body {
 }
 
 #home {
-    min-height: 1100px;
+    min-height: 1200px;
 }
+
+
 
 #Ost {
     width: 70px;
@@ -196,6 +198,7 @@ header {
 .container h3 {
     border-bottom: 2px solid #2e879e;
     padding-bottom: 20px;
+    font-size:24px;
     color: #fbb954;
 }
 
@@ -238,6 +241,7 @@ a.alink {
         /*padding: 10px*/
     }
 }
+
 
 @media all and (max-width:500px) {
     .container, .info {
