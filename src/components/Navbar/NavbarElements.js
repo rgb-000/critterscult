@@ -185,8 +185,8 @@ export const ShadeFooter = styled.div`
   mix-blend-mode: darken;
   min-width: 100vw;
   z-index:1000;
-  min-height: 44px;
+  min-height: 88px;
   overflow: hidden;
   animation-duration: 3000ms;
-  background-size: 44px 44px;
+  background-size: 88px 88px;
 `;

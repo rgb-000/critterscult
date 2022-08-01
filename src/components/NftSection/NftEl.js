@@ -69,7 +69,7 @@ export const ServicesCard = styled.div`
     box-shadow: 0 6px 6px #242622;
     transition: all 0.3s ease-in-out;
     cursor: zoom-in;
-    transform: scale(2);
+    transform: scale(1.5);
 position:center;
      z-index:100;
 

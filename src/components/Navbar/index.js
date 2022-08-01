@@ -58,7 +58,7 @@ const Navbar = ({ toggle }) => {
                                 exact="true"
                                 offset={-80}
                             >
-                                Project
+                                The Background
                             </NavLinks>
                         </NavItem>
                 
@@ -72,7 +72,8 @@ const Navbar = ({ toggle }) => {
                                 exact="true"
                                 offset={-80}
                             >
-                                Collection
+                                The Collection
+
                             </NavLinks>
                         </NavItem>
                         <NavItem>
@@ -83,8 +84,7 @@ const Navbar = ({ toggle }) => {
                                 spy={true}
                                 exact="true"
                                 offset={-80}
-                            >
-                                Development
+                            >The Project
                             </NavLinks>
                         </NavItem>
 

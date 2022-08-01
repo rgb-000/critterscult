@@ -50,7 +50,7 @@ class Play extends Component {
                 <button
                     id="audioBtn"
                     onClick={this.togglePlay}> {this.state.play ? "" : ""}
-                    <img alt="tape" src={this.state.play ? "images/tape.gif" : "images/pause.gif"} />
+                    <img alt="tape" src={this.state.play ? "images/tape.gif" : "images/pause.gif"} /><span>{this.state.play ? "" : ""}</span>
                 </button>
             </div>
         );
@@ -73,11 +73,13 @@ const HeroSection = () => {
             <HeroContent>
                 <Play />
                 <HeroH1>Prologue</HeroH1>
-                <Hero> an outlying town that no one recalls, abandoned structures and spiral patterns started appearing overnight, far away in the fields. Rumors of glazed-eyed wanderers walking around through the night turned that peaceful place upside down.<br /><br />
+                <Hero>ar away in the fields of a town which name no one recalls, rumors of unknown objects and spiral-like patterns appearing overnight are swirling around and emptying the streets. After the Puffbird Forest Incident, signs of "no trespassing" have been seen more and more frequently beyond the surroundings of the Research Facility.
+                    <br /><br />
+                    At the diner shop, no clocks seem to be working. The waitress holds her head over her hands waiting for her shift to be over. A long-bearded man murmurs, as if reading her mind, that they could be entering the blue hour, for no animal sounds could be heard outside.
+                    <br /><br />
+                    Cutting through the cold silence, a slow tempo waltz coming from the hotel's ballroom was still being played, although no one was left in the masquerade ball. Two of the guests were missing and nowhere to be seen. An eerie note left behind could be a clue of what led them deep into the woods.
 
-                    At the diner shop, no clock seems to be working. The waitress holds her head over her hands waiting for her shift to be over. A long-bearded man, sitting next to her, murmurs as if reading her mind that they were entering the blue hour, for no animal sounds could be heard outside.<br /><br />
 
-                    Cutting through the cold silence, a slow tempo waltz can be heard coming from the hotel's ballroom, still being played despite no one is left in the masquerade ball. Two of the guests were missing and nowhere to be seen. An eerie note has been left behind - what seemed to be a clue of what led them deep into the woods.
                 </Hero>
 
                 <HeroBtnWrapper>

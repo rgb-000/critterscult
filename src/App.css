@@ -63,28 +63,36 @@ body {
 }
 
 
-    .tape button {
-        max-width: 70px;
-        min-height: 66px;
-        overflow: hidden;
-        z-index: 10;
-        margin: 0;
-        background-color: transparent;
-        border: none;
-        font-size: 18px;
+.tape button {
+    max-width: 70px;
+    min-height: 66px;
+    overflow: hidden;
+    z-index: 10;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+}
+
+.tape img {
+    display: block;
+    height: 66px !important;
+    margin-left: -35px;
+    mix-blend-mode: lighten;
+}
+
+    .tape img:hover {
+        margin-left: -175px;
+        cursor: pointer;
     }
 
-    .tape img {
-        display:block;
-        height: 66px !important;
-        margin-left: -30px;
-        mix-blend-mode: lighten;
-    }
-
-        .tape img:hover {
-            margin-left: -170px;
-            cursor: pointer;
-        }
+.tape span {
+    font-size: 10px;
+    color: yellow;
+    text-align: center;
+    margin-top: -75px;
+    position: absolute;
+}
 
 .container {
     font-size: 16px;
@@ -112,6 +120,7 @@ body {
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap');
+
 #home p::before, ::after {
     font-size: 16px;
     line-height: 0px;
@@ -125,60 +134,80 @@ body {
 }
 
 #home p::before {
-    content: "\201CIn";
+    content: "\201C F";
     font-family: "Inknut Antiqua";
     margin-left: -20px;
+    margin-right: -5px;
     font-weight: bold;
 }
 
+
+
 #nfttext p::after {
-    content: "\A\A- MythPunk, a Pre-Industrial and Alchemist society; \A- SteamPunk, a Gaslamp victorian horror gear society; \A - DieselPunk, a noir WWII, occultist society;\A- AtomPunk, a Nuclear Power, Space Travel and Spy society;\A- CyberPunk, a Dystopian Megacorps and Hacker future.";
+    content: "\A\A-MythPunk, a Pre-Industrial and Alchemist Society; \A-SteamPunk, a Gaslamp Victorian Horror Gear Society; \A-DieselPunk, a Noir WWII, Occultist Society;\A-AtomPunk, a Sci-fi Nuclear Power Space Travel Society;\A-CyberPunk, a Dystopian Megacorps and Hacker Future; \A\A As a kind of Season 1, the narrative development will depart from the AtomPunk Realm, creating links with the other Realms throughout the project.";
     white-space: pre-wrap;
 }
 
 #scene_01 p::after {
-    content: "Critters Cult is an indie experiment developed by Sun Studio (Suns) under the same standards that drive all @rgb0x00 pixel art creations, focusing on excelling the craft of pixel art and bringing together people that share the same passion around visual narratives and nostalgic pixel art aesthetics. \A\AHeavily influenced by 80s culture, conspiracy theories, old adventure games, B-Movies, and David Lynch and Steven Spielberg's works, the initial development will be set in a small town and its population dealing with bizarre events and characters that defy reason and shift the so-called reality. Critters Cult has the ambition to be a world-building fiction work and evolve into a complex universe with its own logic and physical laws.";
+    content: "Critters Cult is an indie experiment developed by Sun Studio (Suns) under the same standards that drive all @rgb0x00 pixel art creations \2014 \0020 excelling at the craft of pixel art and bringing together people who share the same passion for visual narratives and nostalgic pixel art aesthetics.\A\A Heavily influenced by the 80-90s culture, Lucas Arts adventure games, conspiracy theories, and Stephen King, David Lynch and Steven Spielberg works, this first stage is set in a small town and its population dealing with bizarre events that defy reason and shift reality. Critters Cult is a worldbuilding fiction that evolves into a complex universe with its own logic and laws. ";
     white-space: pre-wrap;
 }
 
 #scene_02 p::after {
-    content: "Critters Cult is divided into three parts that are briefly described below and will be detailed in the near future. \A\AThe first part of Critters Cult will be the profile picture collection. After its launch, 1/1 artworks inspired by the Critters Cult universe will be developed. \A\AThe second part will consist on the development of the visual narrative behind Critters Cult into a web app to be launched within the next few months. \A\AThe third part of the project will start right after the launch of the web app and will result in another collection, to be launched next year \2014 \0020the Suns:Saga. This will be the expansion of Critters Cult through settings and landscapes that will push the storytelling of the Critters Cult even further.";
+    content: "Critters Cult is divided into three parts. The first part of Critters Cult is the profile picture collection development and launch. After mint, the visual narrative behind Critters Cult will be developed as a web app. Right after the launch of the web app begins the development of a new collection, to be launched next year \2014 \0020 the Sunsets:Saga. This will be the expansion of Critters Cult through settings and landscapes that will push the narrative and its complexity even further.";
     white-space: pre-wrap;
 }
 
 .info {
-    max-width: 500px;
+    width: 560px;
 }
 
 button.btn {
-    color: #2e879e;
+    /*
     background-color: #002d33;
     width: 30px;
     padding: 4px 5px 6px 5px;
+    align-content: center;*/
+    width: 520px;
+    color: #2e879e;
+    position: absolute;
     border: hidden;
-    align-content: center;
+    background-color: transparent;
+    align-content: end;
+    text-align: right;
     border-radius: 20px;
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 24px;
+    height: 36px;
 }
 
     button.btn:hover {
         cursor: pointer;
-        background-color: #2e879e;
-        color: #002d33;
+        /*background-color: #2e879e;
+        color: #002d33;*/
         transition: linear ease-in-out 0.4s !important;
     }
 
     button.btn:focus:not(:focus-visible) {
         outline: 0;
         border: hidden;
+        outline-offset: 0px;
         cursor: pointer;
     }
 
     button.btn:focus-visible {
-        outline: 0px solid #2e879e;
+        outline: 0px;
         outline-offset: 0px;
     }
+
+
+a.alink {
+    color: #fbb954;
+    display: block;
+    text-decoration: none;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
 
 header {
     display: flex;
@@ -189,16 +218,20 @@ header {
     align-items: center;
 }
 
+h4 {margin-top:5px;} 
+
 .answer {
     font-size: 14px;
+    padding-top:5px;
     transition-duration: 1s;
     color: #72b6cf;
 }
 
+
 .container h3 {
     border-bottom: 2px solid #2e879e;
-    padding-bottom: 20px;
-    font-size:24px;
+    padding-bottom: 30px;
+    font-size: 24px;
     color: #fbb954;
 }
 
@@ -216,14 +249,7 @@ header {
     /*padding: 40px;*/
 }
 
-a.alink {
-    color: #fbb954;
-    display: block;
-    text-decoration: none;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
+
 
 @media all and (max-width:1920px) {
     #nftgrid {

@@ -78,7 +78,7 @@ export const Column2 = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-  max-width: 600px;
+  max-width: 560px;
   padding-bottom: 10px;
 
   @media all and (max-width: 1440px) {
@@ -115,7 +115,7 @@ export const Heading = styled.h1`
 `;
 
 export const Subtitle = styled.p`
-  max-width: 600px;
+  max-width: 560px;
   font-size: 16px;
   line-height: 24px;
   color: ${({ darkText }) => (darkText ? "#72b6cf" : "#fbb954")};
@@ -124,11 +124,14 @@ export const Subtitle = styled.p`
 
   @media all and (max-width: 1920px) {
   padding:12px;
+   margin:-12px;
   background-color: ${({ dark }) => (dark ? "#242622" : "transparent")};
 }
 
   @media all and (max-width: 1440px) {
   padding:0;
+   margin:0;
+
  background-color:transparent;
 }
 

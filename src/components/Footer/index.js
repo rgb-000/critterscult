@@ -64,10 +64,10 @@ const Footer = () => {
         <SocialMedia>
           <SocialMediaWrap>
             <SocialLogo to="/" onClick={toggleHome}>
-              Critters Cult
+                                Critters Cult©
                       </SocialLogo>
                       <WebsiteRights>
-              developed by Suns© {new Date().getFullYear()}.
+              developed by Sun Studio™ {new Date().getFullYear()}
             </WebsiteRights /*>
                       <SocialIcons>
               <SocialIconLink href="/" target="_blank" aria-label="Twitter">
