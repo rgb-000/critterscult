@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { MdArrowForward, MdKeyboardArrowRight } from "react-icons/md";
 
 export const HeroContainer = styled.div`
-  background: #242622;
+  background: rgb(32, 39, 32);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,7 +10,10 @@ export const HeroContainer = styled.div`
   font-size:16px;
   min-height:fit-content;
   z-index: 1;
-
+-webkit-user-select: none; /* Safari */
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+/Edge */
+user-select: none; /* Standard */
 
 `;
 
@@ -18,7 +21,7 @@ export const HeroContainer = styled.div`
 
 export const HeroBg = styled.div`
   position: absolute;
-  background-color: #242622;
+  background-color: rgb(32, 39, 32);
   background-image: url("/images/scene_05.gif");
   background-repeat-y: no-repeat;
   background-repeat-x: repeat;
@@ -45,7 +48,7 @@ export const HeroContent = styled.div`
   z-index: 3;
   max-width: 500px;
   min-height:fit-content;
-  top:567px;
+  top:500px;
   position: absolute;
   padding: 8px 2px;
   display: flex;
@@ -59,12 +62,13 @@ export const HeroContent = styled.div`
 `;
 
 export const HeroH1 = styled.h1`
-   color: #fbb954;
-  font-size: 18px;
+  color: #fbb954;
+  font-size: 20px;
   line-height: 16px;
-  font-weight: 700;
-  margin-top:10px;
-  letter-spacing: 10px;
+  font-weight: 900;
+  margin-top:20px;
+  margin-bottom:10px;
+  letter-spacing: 5px;
   text-transform: uppercase;
 `;
 

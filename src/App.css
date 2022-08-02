@@ -36,7 +36,7 @@ iframe {
 }
 
 body {
-    background-color: #242622;
+    background-color: rgb(32, 39, 32);
     margin: 0px !important;
 }
 
@@ -56,33 +56,33 @@ body {
 
 
 #Ost {
-    width: 70px;
-    height: 66px;
+    width: 105px;
+    height: 99px;
     margin-left: auto;
     margin-right: auto;
 }
 
 
 .tape button {
-    max-width: 70px;
-    min-height: 66px;
+    max-width:  105px;
+    min-height: 99px;
     overflow: hidden;
     z-index: 10;
     margin: 0;
     background-color: transparent;
     border: none;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .tape img {
     display: block;
-    height: 66px !important;
-    margin-left: -35px;
+    height: 99px !important;
+    margin-left: -50px;
     mix-blend-mode: lighten;
 }
 
     .tape img:hover {
-        margin-left: -175px;
+        margin-left: -260px;
         cursor: pointer;
     }
 
@@ -113,7 +113,7 @@ body {
 }
 
 #home p:first-letter {
-    font-size: 36px;
+    font-size: 30px;
     line-height: 30px;
     font-weight: bold;
     color: #72b6cf;
@@ -149,7 +149,7 @@ body {
 }
 
 #scene_01 p::after {
-    content: "Critters Cult is an indie experiment developed by Sun Studio (Suns) under the same standards that drive all @rgb0x00 pixel art creations \2014 \0020 excelling at the craft of pixel art and bringing together people who share the same passion for visual narratives and nostalgic pixel art aesthetics.\A\A Heavily influenced by the 80-90s culture, Lucas Arts adventure games, conspiracy theories, and Stephen King, David Lynch and Steven Spielberg works, this first stage is set in a small town and its population dealing with bizarre events that defy reason and shift reality. Critters Cult is a worldbuilding fiction that evolves into a complex universe with its own logic and laws. ";
+    content: "Critters Cult is an indie experiment developed by Suns Studio under the same standards that drive all @rgb0x00 pixel art creations \2014 \0020 excelling at the craft of pixel art and bringing together people who share the same passion for visual narratives and nostalgic pixel art aesthetics.\A\A Heavily influenced by the 80-90s aesthetics, conspiracy theories, Lucas Arts adventure games, and Stephen King, David Lynch and Steven Spielberg works, this first stage is set in a small town and its population dealing with bizarre events that defy reason and shift reality. Critters Cult is a worldbuilding fiction that evolves into a complex universe with its own logic and laws. ";
     white-space: pre-wrap;
 }
 
@@ -231,8 +231,12 @@ h4 {margin-top:5px;}
 .container h3 {
     border-bottom: 2px solid #2e879e;
     padding-bottom: 30px;
-    font-size: 24px;
-    color: #fbb954;
+    margin-top: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    /*color: #fbb954;*/
+    color: #72b6cf;
 }
 
 .Fire {

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const FooterContainer = styled.footer`
-  background-color: #242622;
+  background-color: rgb(32, 39, 32);
   background-image: url("images/scene_06.png");
   background-repeat: no-repeat;
   background-position: bottom;

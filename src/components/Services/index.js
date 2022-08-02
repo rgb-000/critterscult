@@ -38,9 +38,9 @@ const Services = () => {
               </ServicesCard>
               <ServicesCard>
                   <ServicesIcon src={"images/suns.png"} />
-                  <ServicesH2>Sun Studio</ServicesH2>
+                  <ServicesH2>Suns Studio</ServicesH2>
                   <ServicesP>
-                      Establishes a long-term community around high quality art and reward holders’ support with exclusive rgb0x00 creations.
+                      Establishes a long-term community around high quality art and reward holders' support with exclusive @rgb0x00 creations.
                   </ServicesP>
               </ServicesCard>
       </ServicesWrapper>

@@ -67,7 +67,7 @@ const Footer = () => {
                                 Critters Cult©
                       </SocialLogo>
                       <WebsiteRights>
-              developed by Sun Studio™ {new Date().getFullYear()}
+              developed by Suns Studio™ {new Date().getFullYear()}
             </WebsiteRights /*>
                       <SocialIcons>
               <SocialIconLink href="/" target="_blank" aria-label="Twitter">
