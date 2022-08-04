@@ -11,7 +11,7 @@ export const scene_01 = {
   img: "images/scene_02.png",
   displayImg: true,
   alt: "scene_01",
-  dark: false,
+  dark: true,
   primary: true,
   darkText: true,
 };
@@ -44,7 +44,7 @@ export const scene_02 = {
   imgStart: false,
   img: "images/scene_01.png",
   alt: "scene_02",
-  dark: true,
+  dark: false,
   primary: true,
   darkText: true,
 };
