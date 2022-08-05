@@ -24,7 +24,7 @@ const Services = () => {
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon src={"images/col.png"} />
-          <ServicesH2>Playfullness</ServicesH2>
+          <ServicesH2>Playfulness</ServicesH2>
           <ServicesP>
                       All stages are intended to push forward the traditional way of making a multimedia project embracing the new features from web 3.0.
           </ServicesP>
