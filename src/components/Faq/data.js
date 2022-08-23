@@ -19,7 +19,7 @@ const questions = [
         id: 3,
         title: 'When will be the Critters Cult mint?',
         info:
-            'The mint will be in September.',
+            'The mint will be in September 25.',
     },
     {
         id: 4,
@@ -37,7 +37,7 @@ const questions = [
         id: 6,
         title: 'How can I get a WL spot?',
         info:
-            'There are a few ways of getting a WL spot that will be revealed later on. The WL distribution will primarily focus on art projects and collectives, creators, collectors, partnered projects and Solsunsets holders.',
+            'The WL distribution will primarily focus on art projects and collectives, creators, collectors, partnered projects and Solsunsets holders.',
     },
           {
         id: 7,
