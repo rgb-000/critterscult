@@ -31,7 +31,7 @@ const questions = [
         id: 5,
         title: 'How can I mint and how much it will cost?',
         info:
-            'The price will be announced closer to the mint date and you will be able to mint with Sol, if you are whitelisted, and part of the supply will be minted with $Pixels, the Suns Studio native token.',
+            '3 SOL, WL only.',
     },
     {
         id: 6,
