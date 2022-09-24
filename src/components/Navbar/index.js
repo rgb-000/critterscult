@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { animateScroll as scroll } from "react-scroll";
-import { FaBars, FaTwitter, FaDiscord } from "react-icons/fa";
+import { FaBars, FaTwitter, FaDiscord, FaCandyCane } from "react-icons/fa";
 
 import {
     Nav,
@@ -13,8 +13,6 @@ import {
     SocialIcons,
     SocialIconLink,
     ShadeFooter,
-    /*FireLinks,
-      Fire*/
 } from "./NavbarElements";
 
 const Navbar = ({ toggle }) => {
@@ -106,6 +104,9 @@ const Navbar = ({ toggle }) => {
                         </SocialIconLink>
                         <SocialIconLink href="https://discord.com/invite/RNSRHaxzbR" target="_blank" aria-label="Discord">
                             <FaDiscord />
+                        </SocialIconLink>
+                        <SocialIconLink href="https://mint.critterscult.com" target="_blank" aria-label="Discord">
+                            <FaCandyCane className="Candy" />
                         </SocialIconLink>
                     </SocialIcons>
                 </NavbarContainer>

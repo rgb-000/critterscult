@@ -24,6 +24,22 @@ iframe {
     display: "none";
 }
 
+.Candy {
+    background-color: rgb(32,39,32);
+    width: 36px;
+    height: 36px !important;
+    position: relative;
+    overflow: visible;
+    padding:8px;
+    border-radius:12px;
+    display: block;
+}
+
+
+    .Candy:hover {
+        background-color: #fbb954;
+        color: rgb(32,39,32);
+    }
 
 .imgheader {
     width: auto;

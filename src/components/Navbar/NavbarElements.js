@@ -19,7 +19,7 @@ export const Nav = styled.nav`
   }
 `;
 
-/*
+
 
 
 export const FireLinks = styled(LinkS)`
@@ -27,32 +27,6 @@ export const FireLinks = styled(LinkS)`
 `;
 
 
-export const Fire = styled.div`
-  height: 90px;
-  margin-top:90vh;
-  margin-bottom:5vh;
-  width:100vw;
-  background-image: url("/images/fire.png");
-  animation: ${({ scrollNav }) => (scrollNav ? "AnimA" : "AnimB infinite")};
-  justify-content: center;
-  align-items: center;
-  background-repeat:no-repeat;
-  background-attachment: fixed;
-  background-position:center;
-  background-size:90px 90px;
-  position:relative;
-  display:block;
-  animation-duration: 2000ms;
-  animation-fill-mode: ${({ scrollNav }) => (scrollNav ? "forwards" : "backwards")};
-  z-index: 10;
-  bottom:0;
-
-  @media all and (max-width: 768px) {
-  margin-top:1000px;
-  visibility:hidden;
-}
-
-`;*/
 
 export const NavbarContainer = styled.div`
   display: flex;
@@ -139,7 +113,7 @@ export const NavBtnLink = styled(LinkR)`
   background: rgb(32, 39, 32);
   white-space: nowrap;
   padding: 10px 22px;
-  color: rgb(32, 39, 32);
+  color: #fbb954;
   font-size: 1rem;
   outline: none;
   border: none;
@@ -156,7 +130,7 @@ export const NavBtnLink = styled(LinkR)`
 
 export const SocialIcons = styled.div`
   display: flex;
-width:100px;
+width:200px;
   justify-content: space-between;
   align-items: center;
 
@@ -165,15 +139,18 @@ width:100px;
   }
 `;
 
+
 export const SocialIconLink = styled.a`
   color: #72b6cf;
   font-size: 20px;
+  line-height: 30px;
 
   @media all and (max-width: 768px) {
     display: none;
   }
 
 `;
+
 
 export const ShadeFooter = styled.div`
   position: fixed;
