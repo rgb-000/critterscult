@@ -1,4 +1,6 @@
 import React from "react";
+import { FaExternalLinkAlt } from "react-icons/fa";
+
 import {
   InfoContainer,
   InfoWrapper,
@@ -11,10 +13,13 @@ import {
   Subtitle,
   ImgWrap,
   Img,
+  Link
 } from "./InfoElements";
 
 const InfoSection = ({
   id,
+  alink,
+  linktext,
   imgStart,
   topLine,
   lightText,
@@ -22,6 +27,10 @@ const InfoSection = ({
   darkText,
   dark,
   description,
+  alink2,
+  linktext2,
+  description2,
+  description3,
   img,
   alt,
 }) => {
@@ -34,16 +43,18 @@ const InfoSection = ({
               <TextWrapper>
                 <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
-                              <Subtitle dark={dark} darkText={darkText}>{description}</Subtitle>
-              </TextWrapper>
+                              <Subtitle dark={dark} darkText={darkText}>{description}<Link href={alink} target="_blank" rel="noopener noreferrer">{linktext}&nbsp;<FaExternalLinkAlt /></Link>{description2}<Link href={alink2} target="_blank" rel="noopener noreferrer">{linktext2}&nbsp;<FaExternalLinkAlt /></Link>{description3}</Subtitle>
+                              
+                </TextWrapper>
             </Column1>
             <Column2>
               <ImgWrap>
-                              <Img src={img} alt={alt} />
+                <Img src={img} alt={alt} />
               </ImgWrap>
             </Column2>
           </InfoRow>
-        </InfoWrapper>
+              </InfoWrapper>
+
       </InfoContainer>
     </>
   );

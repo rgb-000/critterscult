@@ -6,13 +6,8 @@ import {
     HeroH1,
     Hero,
     HeroBtnWrapper,
-    /*ArrowForward,
-    ArrowRight,*/
 } from "./HeroElements";
-/*import { Button } from "../ButtonElements";*/
 import Mp3 from "../../audio/audio.mp3";
-
-
 
 class Play extends Component {
     constructor(props) {
@@ -57,14 +52,11 @@ class Play extends Component {
     }
 }
 
-
-
 const HeroSection = () => {
     /*const [hover, setHover] = useState(false);
       const onHover = () => {
       setHover(!hover);
     };*/
-
 
     return (
         <HeroContainer id="home" >
@@ -79,13 +71,12 @@ const HeroSection = () => {
                     <br /><br />
                     Cutting through the cold silence, a slow tempo waltz coming from the hotel's ballroom was still being played, although no one was left in the masquerade ball. Two of the guests were missing and nowhere to be seen. An eerie note left behind could be a clue of what led them deep into the woods.
 
-
                 </Hero>
 
                 <HeroBtnWrapper>
                 </HeroBtnWrapper>
             </HeroContent>
-      
+
         </HeroContainer>
 
     );

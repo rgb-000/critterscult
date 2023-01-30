@@ -123,7 +123,6 @@ export const Subtitle = styled.p`
   font-size: 16px;
   line-height: 24px;
   color: ${({ darkText }) => (darkText ? "#72b6cf" : "#fbb954")};
-
 }
 
   @media all and (max-width: 1920px) {
@@ -159,6 +158,12 @@ export const ImgWrap = styled.div`
     margin-left:auto;
     margin-right:auto;}
 
+`;
+
+export const Link = styled.a`
+ color: ${({ darkText }) => (darkText ? "#72b6cf" : "#fbb954")};
+text-decoration:none;
+};
 `;
 
 export const Img = styled.img`

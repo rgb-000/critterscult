@@ -48,8 +48,6 @@ export const ServicesCard = styled.div`
   box-shadow: 0 2px 3px #012;
   transition: all 0.2s ease-in-out;
 
-
- 
 `;
 
 export const ServicesIcon = styled.img`
@@ -61,7 +59,6 @@ export const ServicesIcon = styled.img`
     transform: scale(1.5);
     transition: all 0.3s ease-in-out;
     cursor: pointer;*/
-
   }
 
 `;
@@ -88,8 +85,6 @@ export const ServicesP = styled.p`
 color:#72b6cf;
  @media all and (max-width: 768px) {
   font-size:0.8rem;
-
   }
-
 
 `;

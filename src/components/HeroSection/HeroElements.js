@@ -17,8 +17,6 @@ user-select: none; /* Standard */
 
 `;
 
-
-
 export const HeroBg = styled.div`
   position: absolute;
   background-color: rgb(32, 39, 32);
@@ -37,12 +35,9 @@ export const HeroBg = styled.div`
    min-height: 334px;
    height: 334px;
    background-size: 2000px 334px;
-
-
   }
 
 `;
-
 
 export const HeroContent = styled.div`
   z-index: 3;

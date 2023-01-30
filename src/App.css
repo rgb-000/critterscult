@@ -30,11 +30,10 @@ iframe {
     height: 36px !important;
     position: relative;
     overflow: visible;
-    padding:8px;
-    border-radius:12px;
+    padding: 8px;
+    border-radius: 12px;
     display: block;
 }
-
 
     .Candy:hover {
         background-color: #fbb954;
@@ -69,8 +68,6 @@ body {
     min-height: 1200px;
 }
 
-
-
 #Ost {
     width: 105px;
     height: 99px;
@@ -78,9 +75,8 @@ body {
     margin-right: auto;
 }
 
-
 .tape button {
-    max-width:  105px;
+    max-width: 105px;
     min-height: 99px;
     overflow: hidden;
     z-index: 10;
@@ -157,21 +153,19 @@ body {
     font-weight: bold;
 }
 
-
-
 #nfttext p::after {
     content: "\A\A-MythPunk, a Pre-Industrial and Alchemist Society; \A-SteamPunk, a Gaslamp Victorian Horror Gear Society; \A-DieselPunk, a Noir WWII, Occultist Society;\A-AtomPunk, a Sci-fi Nuclear Power Space Travel Society;\A-CyberPunk, a Dystopian Megacorps and Hacker Future; \A\A As a kind of Season 1, the narrative development will depart from the AtomPunk Realm, creating links with the other Realms throughout the project.";
     white-space: pre-wrap;
 }
 
 #scene_01 p::after {
-    content: "Critters Cult is an indie experiment developed by Suns Studio under the same standards that drive all @rgb0x00 pixel art creations \2014 \0020 excelling at the craft of pixel art and bringing together people who share the same passion for visual narratives and nostalgic pixel art aesthetics.\A\A Heavily influenced by the 80-90s aesthetics, conspiracy theories, Lucas Arts adventure games, and Stephen King, David Lynch and Steven Spielberg works, this first stage is set in a small town and its population dealing with bizarre events that defy reason and shift reality. Critters Cult is a worldbuilding fiction that evolves into a complex universe with its own logic and laws. ";
+    content: "";
     white-space: pre-wrap;
 }
 
-#scene_02 p::after {
-    content: "Critters Cult is divided into three parts. The first part is the profile picture collection development and launch. After mint, the visual narrative behind Critters Cult will be unfolded as a web app and with art creations that will promote the project and grow the community. Right after the launch of the web app, the development of a new collection begins, to be launched next year \2014 \0020 the Sunsets:Saga. This will be the expansion of Critters Cult through settings and landscapes that will push the narrative and its complexity even further.";
-    white-space: pre-wrap;
+#scene_01 a {
+    display: none !important;
+    visibility: hidden;
 }
 
 .info {
@@ -215,7 +209,6 @@ button.btn {
         outline-offset: 0px;
     }
 
-
 a.alink {
     color: #fbb954;
     display: block;
@@ -234,15 +227,16 @@ header {
     align-items: center;
 }
 
-h4 {margin-top:5px;} 
+h4 {
+    margin-top: 5px;
+}
 
 .answer {
     font-size: 14px;
-    padding-top:5px;
+    padding-top: 5px;
     transition-duration: 1s;
     color: #72b6cf;
 }
-
 
 .container h3 {
     border-bottom: 2px solid #2e879e;
@@ -269,8 +263,6 @@ h4 {margin-top:5px;}
     /*padding: 40px;*/
 }
 
-
-
 @media all and (max-width:1920px) {
     #nftgrid {
         grid-area: col1 !important;
@@ -287,7 +279,6 @@ h4 {margin-top:5px;}
         /*padding: 10px*/
     }
 }
-
 
 @media all and (max-width:500px) {
     .container, .info {

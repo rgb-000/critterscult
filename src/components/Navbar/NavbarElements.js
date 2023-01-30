@@ -19,14 +19,9 @@ export const Nav = styled.nav`
   }
 `;
 
-
-
-
 export const FireLinks = styled(LinkS)`
   cursor: pointer;
 `;
-
-
 
 export const NavbarContainer = styled.div`
   display: flex;
@@ -97,7 +92,20 @@ export const NavLinks = styled(LinkS)`
   }
 `;
 
+export const NavEx = styled.a`
+  color: #72b6cf;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
 
+  &.hover {   color: #72b6cf}
+  &.active {
+    border-bottom: 3px solid #01bf71;
+  }
+`;
 
 export const NavBtn = styled.nav`
   display: flex;
@@ -139,7 +147,6 @@ width:200px;
   }
 `;
 
-
 export const SocialIconLink = styled.a`
   color: #72b6cf;
   font-size: 20px;
@@ -150,7 +157,6 @@ export const SocialIconLink = styled.a`
   }
 
 `;
-
 
 export const ShadeFooter = styled.div`
   position: fixed;

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { animateScroll as scroll } from "react-scroll";
-import { FaBars, FaTwitter, FaDiscord, FaCandyCane } from "react-icons/fa";
+import { FaBars, FaTwitter, FaDiscord, FaGamepad, FaExternalLinkSquareAlt } from "react-icons/fa";
 
 import {
     Nav,
@@ -10,6 +10,7 @@ import {
     NavMenu,
     NavItem,
     NavLinks,
+    NavEx,
     SocialIcons,
     SocialIconLink,
     ShadeFooter,
@@ -56,10 +57,9 @@ const Navbar = ({ toggle }) => {
                                 exact="true"
                                 offset={-80}
                             >
-                                The Background
+                                Background
                             </NavLinks>
                         </NavItem>
-                
 
                         <NavItem>
                             <NavLinks
@@ -70,7 +70,7 @@ const Navbar = ({ toggle }) => {
                                 exact="true"
                                 offset={-80}
                             >
-                                The Collection
+                                Collection
 
                             </NavLinks>
                         </NavItem>
@@ -82,8 +82,13 @@ const Navbar = ({ toggle }) => {
                                 spy={true}
                                 exact="true"
                                 offset={-80}
-                            >The Project
+                            >Project
                             </NavLinks>
+                        </NavItem>
+                        <NavItem>
+                            <NavEx href="https://loopchronicles.app" target="_blank" aria-label="Discord">
+                                Loop Chronicles&nbsp; <FaExternalLinkSquareAlt />
+                            </NavEx>
                         </NavItem>
 
                         <NavItem>
@@ -105,13 +110,12 @@ const Navbar = ({ toggle }) => {
                         <SocialIconLink href="https://discord.com/invite/RNSRHaxzbR" target="_blank" aria-label="Discord">
                             <FaDiscord />
                         </SocialIconLink>
-                        <SocialIconLink href="https://mint.critterscult.com" target="_blank" aria-label="Discord">
-                            <FaCandyCane className="Candy" />
+                        <SocialIconLink href="https://loopchronicles.app" target="_blank" aria-label="Discord">
+                            <FaGamepad className="Candy" />
                         </SocialIconLink>
                     </SocialIcons>
                 </NavbarContainer>
-            </Nav>    <ShadeFooter scrollNav={scrollNav}/>
-
+            </Nav>    <ShadeFooter scrollNav={scrollNav} />
 
         </>
     );
