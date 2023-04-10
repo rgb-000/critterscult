@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { animateScroll as scroll } from "react-scroll";
 import { FaBars, FaTwitter, FaDiscord, FaHome, FaBookDead, FaQuestionCircle } from "react-icons/fa";
-import { BsJoystick } from "react-icons/bs/index";
+import { BiJoystick } from "react-icons/bi";
 import {
     Nav,
     NavbarContainer,
@@ -86,7 +86,7 @@ const Navbar = ({ toggle }) => {
                         </NavItem>
                         <NavItem>
                             <NavEx href="https://loopchronicles.app" target="_blank" aria-label="Discord" className="new">
-                                Loop Chronicles&nbsp; <BsJoystick />
+                                Loop Chronicles&nbsp; <BiJoystick />
                             </NavEx>
                         </NavItem>
                         <NavItem>
