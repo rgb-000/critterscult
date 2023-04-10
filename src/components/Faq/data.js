@@ -28,13 +28,13 @@ const questions = [
         alink: 'https://famousfoxes.com/tokenmarket/PXLSmSBWHU8yAqNof9Ry2LPsZxHSYB4xXsBaQWUmEzV',
     },
     {
-        id: 4,
+        id: 6,
         title: 'What are the future developments for the project?',
         info:  'For information on future developments for Critters Cult, please join our discord or check our Artmap 3.0.',
         alink: 'https://sunsstudio.com/artmap_3.0.pdf',
     },
     {
-        id: 5,
+        id: 7,
         title: 'Where can I find more information about Suns Studio?',
         info:  'To learn more about the resources within the Suns ecosystem, please visit our main website:',
         alink: 'https://sunsstudio.com',

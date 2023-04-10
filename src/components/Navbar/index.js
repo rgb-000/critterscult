@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { animateScroll as scroll } from "react-scroll";
-import { FaBars, FaTwitter, FaDiscord, FaHome, FaBookDead, FaQuestionCircle } from "react-icons/fa";
+import { FaBars, FaTwitter, FaDiscord, FaHome, FaBookDead } from "react-icons/fa";
 import { BiJoystick } from "react-icons/bi";
 import {
     Nav,
@@ -18,23 +18,23 @@ import {
 
 const Navbar = ({ toggle }) => {
     const [scrollNav, setScrollNav] = useState(false);
-
+  
     const changeNav = () => {
-        if (window.scrollY >= 50) {
-            setScrollNav(true);
-        } else {
-            setScrollNav(false);
-        }
+      if (window.scrollY >= 50) {
+        setScrollNav(true);
+      } else {
+        setScrollNav(false);
+      }
     };
-
+  
     useEffect(() => {
-        window.addEventListener("scroll", changeNav);
+      window.addEventListener("scroll", changeNav);
     }, []);
-
+  
     const toggleHome = () => {
-        scroll.scrollToTop();
+      scroll.scrollToTop();
     };
-
+  
     return (
         <>
 
@@ -73,6 +73,7 @@ const Navbar = ({ toggle }) => {
 
                             </NavLinks>
                         </NavItem>
+                        
                         <NavItem>
                             <NavLinks
                                 to="scene_02"
@@ -84,20 +85,18 @@ const Navbar = ({ toggle }) => {
                             >Project
                             </NavLinks>
                         </NavItem>
+                      
                         <NavItem>
-                            <NavEx href="https://loopchronicles.app" target="_blank" aria-label="Discord" className="new">
+                            <NavEx href="https://loopchronicles.app" target="_blank" aria-label="Loop" className="new">
                                 Loop Chronicles&nbsp; <BiJoystick />
                             </NavEx>
                         </NavItem>
                         <NavItem>
-                            <NavEx href="https://book.critterscult.com" target="_blank" aria-label="Discord" className="new">
+                            <NavEx href="https://book.critterscult.com" target="_blank" aria-label="Book" className="new">
                                Critters Book&nbsp; <FaBookDead />
                             </NavEx>
                         </NavItem>
-
-                       
-                    </NavMenu><SocialIcons>
-                    <SocialIconLink>
+                        <NavItem>
                             <NavLinks
                                 to="Faq"
                                 smooth={true}
@@ -105,10 +104,12 @@ const Navbar = ({ toggle }) => {
                                 spy={true}
                                 exact="true"
                                 offset={-80}
-                            >
-                              <FaQuestionCircle/>
-                            </NavLinks>
-                        </SocialIconLink>
+                            > F.A.Q.
+                            </NavLinks></NavItem>
+                       
+                    </NavMenu><SocialIcons>
+                    <SocialIconLink>
+                                                 </SocialIconLink>
                         <SocialIconLink href="https://twitter.com/critterscult" target="_blank" aria-label="Twitter">
                             <FaTwitter />
                         </SocialIconLink>

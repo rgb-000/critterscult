@@ -29,7 +29,7 @@ export const NavbarContainer = styled.div`
   height: 40px;
   z-index: 1;
   width: 100%;
-  padding: 0 20px;
+  padding: 0 0px;
   max-width: 1100px;
 `;
 
@@ -140,7 +140,7 @@ export const NavBtnLink = styled(LinkR)`
 
 export const SocialIcons = styled.div`
   display: flex;
-  width:200px;
+  width:120px;
   justify-content: space-between;
   align-items: baseline;
   margin-top: 6px;

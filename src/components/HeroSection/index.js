@@ -41,7 +41,7 @@ class Play extends Component {
 
     render() {
         return (
-            <div class="tape" id="Ost">
+            <div className="tape" id="Ost">
                 <button
                     id="audioBtn"
                     onClick={this.togglePlay}> {this.state.play ? "" : ""}
