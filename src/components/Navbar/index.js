@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { animateScroll as scroll } from "react-scroll";
-import { FaBars, FaTwitter, FaDiscord, FaGamepad, FaExternalLinkSquareAlt } from "react-icons/fa";
-
+import { FaBars, FaTwitter, FaDiscord, FaGamepad, FaExternalLinkSquareAlt, FaHome, FaBookDead, FaQuestionCircle } from "react-icons/fa";
+import {BsJoystick} from "react-icons/bs";
 import {
     Nav,
     NavbarContainer,
@@ -41,8 +41,7 @@ const Navbar = ({ toggle }) => {
             <Nav scrollNav={scrollNav}>
 
                 <NavbarContainer>
-                    <NavLogo to="/" onClick={toggleHome}>
-                        Critters Cult
+                    <NavLogo to="/" onClick={toggleHome}><FaHome />
                     </NavLogo>
                     <MobileIcon onClick={toggle}>
                         <FaBars />
@@ -86,12 +85,19 @@ const Navbar = ({ toggle }) => {
                             </NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavEx href="https://loopchronicles.app" target="_blank" aria-label="Discord">
-                                Loop Chronicles&nbsp; <FaExternalLinkSquareAlt />
+                            <NavEx href="https://loopchronicles.app" target="_blank" aria-label="Discord" className="new">
+                                Loop Chronicles&nbsp; <BsJoystick />
+                            </NavEx>
+                        </NavItem>
+                        <NavItem>
+                            <NavEx href="https://book.critterscult.com" target="_blank" aria-label="Discord" className="new">
+                               Critters Book&nbsp; <FaBookDead />
                             </NavEx>
                         </NavItem>
 
-                        <NavItem>
+                       
+                    </NavMenu><SocialIcons>
+                    <SocialIconLink>
                             <NavLinks
                                 to="Faq"
                                 smooth={true}
@@ -100,19 +106,16 @@ const Navbar = ({ toggle }) => {
                                 exact="true"
                                 offset={-80}
                             >
-                                F.A.Q.
+                              <FaQuestionCircle/>
                             </NavLinks>
-                        </NavItem>
-                    </NavMenu><SocialIcons>
+                        </SocialIconLink>
                         <SocialIconLink href="https://twitter.com/critterscult" target="_blank" aria-label="Twitter">
                             <FaTwitter />
                         </SocialIconLink>
                         <SocialIconLink href="https://discord.com/invite/RNSRHaxzbR" target="_blank" aria-label="Discord">
                             <FaDiscord />
                         </SocialIconLink>
-                        <SocialIconLink href="https://loopchronicles.app" target="_blank" aria-label="Discord">
-                            <FaGamepad className="Candy" />
-                        </SocialIconLink>
+                       
                     </SocialIcons>
                 </NavbarContainer>
             </Nav>    <ShadeFooter scrollNav={scrollNav} />

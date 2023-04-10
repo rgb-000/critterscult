@@ -28,7 +28,9 @@ const InfoSection = ({
   dark,
   description,
   alink2,
+  alink3,
   linktext2,
+  linktext3,
   description2,
   description3,
   img,
@@ -43,7 +45,7 @@ const InfoSection = ({
               <TextWrapper>
                 <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
-                              <Subtitle dark={dark} darkText={darkText}>{description}<Link href={alink} target="_blank" rel="noopener noreferrer">{linktext}&nbsp;<FaExternalLinkAlt /></Link>{description2}<Link href={alink2} target="_blank" rel="noopener noreferrer">{linktext2}&nbsp;<FaExternalLinkAlt /></Link>{description3}</Subtitle>
+                              <Subtitle dark={dark} darkText={darkText}>{description}<Link href={alink} target="_blank" rel="noopener noreferrer">{linktext}&nbsp;<FaExternalLinkAlt /></Link>{description2}<Link href={alink2} target="_blank" rel="noopener noreferrer">{linktext2}&nbsp;<FaExternalLinkAlt /></Link>{description3}<Link href={alink3} target="_blank" rel="noopener noreferrer">{linktext3}&nbsp;<FaExternalLinkAlt /></Link></Subtitle>
                               
                 </TextWrapper>
             </Column1>

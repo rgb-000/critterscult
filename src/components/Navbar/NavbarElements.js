@@ -74,6 +74,8 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
   height: 50px;
+  margin-top: -4px;
+
 `;
 
 export const NavLinks = styled(LinkS)`
@@ -138,9 +140,10 @@ export const NavBtnLink = styled(LinkR)`
 
 export const SocialIcons = styled.div`
   display: flex;
-width:200px;
+  width:200px;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
+  margin-top: 6px;
 
   @media all and (max-width: 768px) {
     display: none;

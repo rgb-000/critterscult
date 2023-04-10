@@ -49,6 +49,10 @@ iframe {
     max-width: 1440px;
     width: 100%;
 }
+.new {
+color: #fbb954 !important;
+font-weight: 900 !important;
+}
 
 body {
     background-color: rgb(32, 39, 32);
