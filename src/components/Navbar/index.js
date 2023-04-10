@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { animateScroll as scroll } from "react-scroll";
-import { FaBars, FaTwitter, FaDiscord, FaGamepad, FaExternalLinkSquareAlt, FaHome, FaBookDead, FaQuestionCircle } from "react-icons/fa";
-import {BsJoystick} from "react-icons/bs";
+import { FaBars, FaTwitter, FaDiscord, FaHome, FaBookDead, FaQuestionCircle } from "react-icons/fa";
+import { BsJoystick } from "react-icons/bs/index";
 import {
     Nav,
     NavbarContainer,
