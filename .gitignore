@@ -26,3 +26,5 @@ yarn-error.log*
 /.vs/slnx.sqlite
 /.vs/critterscult/config/applicationhost.config
 /.vs/critterscult/v17/.suo
+.eslintcache
+.gitignore
