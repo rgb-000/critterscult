@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { animateScroll as scroll } from "react-scroll";
-import { FaBars, FaTwitter, FaDiscord, FaHome, FaBookDead } from "react-icons/fa";
+import { FaBars, FaTwitter, FaDiscord, FaHome, FaBookDead, FaFortAwesome } from "react-icons/fa";
 import { BiJoystick } from "react-icons/bi";
+import { TbCandle } from "react-icons/tb";
+
 import {
     Nav,
     NavbarContainer,
@@ -47,19 +49,7 @@ const Navbar = ({ toggle }) => {
                         <FaBars />
                     </MobileIcon>
                     <NavMenu>
-                        <NavItem>
-                            <NavLinks
-                                to="scene_01"
-                                smooth={true}
-                                duration={500}
-                                spy={true}
-                                exact="true"
-                                offset={-80}
-                            >
-                                Background
-                            </NavLinks>
-                        </NavItem>
-
+                      
                         <NavItem>
                             <NavLinks
                                 to="nfts"
@@ -94,6 +84,11 @@ const Navbar = ({ toggle }) => {
                         <NavItem>
                             <NavEx href="https://book.critterscult.com" target="_blank" aria-label="Book" className="new">
                                Critters Book&nbsp; <FaBookDead />
+                            </NavEx>
+                        </NavItem>
+                        <NavItem>
+                            <NavEx href="https://library.critterscult.com" target="_blank" aria-label="Book" className="new">
+                               The Library&nbsp; <FaFortAwesome />
                             </NavEx>
                         </NavItem>
                         <NavItem>
