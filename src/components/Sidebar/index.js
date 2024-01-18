@@ -1,6 +1,6 @@
 import React from "react";
 import { BiJoystick } from "react-icons/bi";
-import { FaBookDead, FaTwitter, FaDiscord } from "react-icons/fa";
+import { FaBookDead, FaTwitter, FaDiscord, FaFortAwesome } from "react-icons/fa";
 import {
   SidebarContainer,
   Icon,
@@ -26,25 +26,28 @@ const Sidebar = ({ isOpen, toggle }) => {
             Project
           </SidebarLink>
           <SidebarLink to="nfts" onClick={toggle}>
-          Collection
+            Collection
           </SidebarLink>
           <SidebarLink to="Faq" onClick={toggle}>
             F.A.Q.
           </SidebarLink>
-          
+
           <SidebarUrl href="https://loopchronicles.app" onClick={toggle} target="_blank" rel="noopener noreferrer" className="new">
-              The Loop Chronicles&nbsp;<BiJoystick/>
+            The Loop Chronicles&nbsp;<BiJoystick />
           </SidebarUrl>
           <SidebarUrl onClick={toggle} href="https://book.critterscult.com" to="https://book.critterscult.com" target="_blank" rel="noopener noreferrer" className="new">
-              The Critters Book&nbsp;<FaBookDead/>
+            The Critters Book&nbsp;<FaBookDead />
+          </SidebarUrl>
+          <SidebarUrl onClick={toggle} href="https://library.critterscult.com" to="https://library.critterscult.com" target="_blank" rel="noopener noreferrer" className="new">
+            The Library&nbsp;<FaFortAwesome />
           </SidebarUrl>
           <SidebarUrl href="https://twitter.com/critterscult" onClick={toggle} target="_blank" rel="noopener noreferrer">
-          &nbsp;<FaTwitter/>&nbsp;
+            &nbsp;<FaTwitter />&nbsp;
           </SidebarUrl>
           <SidebarUrl onClick={toggle} href="https://discord.com/invite/suns-studio" target="_blank" rel="noopener noreferrer">
-          &nbsp;<FaDiscord/>&nbsp;
+            &nbsp;<FaDiscord />&nbsp;
           </SidebarUrl>
-        
+
         </SidebarMenu>
       </SidebarWrapper>
     </SidebarContainer>
