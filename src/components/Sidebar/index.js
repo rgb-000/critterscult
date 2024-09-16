@@ -44,7 +44,7 @@ const Sidebar = ({ isOpen, toggle }) => {
           <SidebarUrl href="https://twitter.com/critterscult" onClick={toggle} target="_blank" rel="noopener noreferrer">
             &nbsp;<FaTwitter />&nbsp;
           </SidebarUrl>
-          <SidebarUrl onClick={toggle} href="https://discord.com/invite/suns-studio" target="_blank" rel="noopener noreferrer">
+          <SidebarUrl onClick={toggle} href="https://discord.gg/invite/RNSRHaxzbR" target="_blank" rel="noopener noreferrer">
             &nbsp;<FaDiscord />&nbsp;
           </SidebarUrl>
 
